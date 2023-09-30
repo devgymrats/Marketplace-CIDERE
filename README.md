@@ -10,6 +10,8 @@ Desarrollar una plataforma de licitaciones (marketplace) en línea para CIDERE, 
 ## Usado por
 
 Este proyecto va a ser utilizado por CIDERE (Corporación industrial para el desarrollo regional)
+
+
 ![Logo](https://cidere.cl/wp-content/uploads/2021/01/logotipo-cidere_Mesa-de-trabajo-1-copia.png)
 
 ## Autores
