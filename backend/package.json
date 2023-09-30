@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/devgymrats/Marketplace-CIDERE/issues"
   },
-  "homepage": "https://github.com/devgymrats/Marketplace-CIDERE#readme"
+  "homepage": "https://github.com/devgymrats/Marketplace-CIDERE#readme",
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
 }
