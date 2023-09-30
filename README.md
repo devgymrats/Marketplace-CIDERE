@@ -1,7 +1,7 @@
 
 # Proyecto: desarrollo de marketplace para CIDERE
 
-Repositorio creado para el proyecto final del ramo de Ingeniería de Software II de la Universidad de La Serena.
+Repositorio creado para el proyecto final del ramo de Ingeniería de Software II 2023 de la Universidad de La Serena.
 
 ## Objetivo
 
