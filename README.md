@@ -7,7 +7,7 @@ Repositorio creado para el proyecto final del ramo de Ingeniería de Software II
 
 Desarrollar una plataforma de licitaciones (marketplace) en línea para CIDERE, que permita a los usuarios crear, publicar y participar en licitaciones de manera eficiente y segura. Se debe registrar cada hito del proceso en la BD para dar soporte a analítica del proceso.
 
-## Usado por
+## Cliente
 
 Este proyecto va a ser utilizado por CIDERE (Corporación industrial para el desarrollo regional)
 
