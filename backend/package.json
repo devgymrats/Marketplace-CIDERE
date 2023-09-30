@@ -1,0 +1,20 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend para marketplace de CIDERE",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/devgymrats/Marketplace-CIDERE.git"
+  },
+  "author": "devgymrats",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/devgymrats/Marketplace-CIDERE/issues"
+  },
+  "homepage": "https://github.com/devgymrats/Marketplace-CIDERE#readme"
+}
