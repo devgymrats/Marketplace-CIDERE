@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="es-419">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CIDERE módulo 3</title>
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/fonts/fontawesome5-overrides.min.css">
+    <link rel="stylesheet" href="../assets/css/accordion-faq-list.css">
+    <link rel="stylesheet" href="../assets/css/admin/admin.css">
+    <link rel="stylesheet" href="../assets/css/Drag-Drop-File-Input-Upload.css">
+    <link rel="stylesheet" href="../assets/css/gradient-navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="../assets/css/Ludens---1-Index-Table-with-Search--Sort-Filters-v20.css">
+    <link rel="stylesheet" href="../assets/css/searchbox.css">
+    <link rel="stylesheet" href="../assets/css/Section-Title.css">
+    <link rel="stylesheet" href="../assets/css/Tamplate-SB-Admin-on-BSS.css">
+    <link rel="stylesheet" href="../assets/css/Ultimate-Testimonial-Slider-BS5.css">
+</head>
+
+<body>
+    <div>
+        <nav class="navbar navbar-expand bg-dark sb-topnav navbar-dark" id="app-navbar">
+            <div class="container-fluid"><button class="btn btn-link btn-sm link-light order-md-1" id="sidebarToggle" type="button"><i class="fa fa-bars" style="font-size: 20px;"></i></button><a class="navbar-brand" href="#"><img src="../assets/img/logo%20EIM%20shadowed.png" style="margin-right: 10px;border-width: 3px;border-style: solid;border-radius: 8px;" width="89" height="48">CIDERE</a>
+                <form class="d-none d-md-inline-block order-2 ms-auto me-0 me-md-3 my-2 my-md-0">
+                    <div class="input-group"><input class="form-control" type="text" placeholder="Buscar ...">
+                        <div class="input-group-append"><button class="btn btn-primary" type="button"><i class="fa fa-search"></i></button></div>
+                    </div>
+                </form>
+                <ul class="navbar-nav d-flex order-3 ms-auto ms-md-0">
+                    <li class="nav-item d-flex d-sm-flex d-md-none justify-content-center align-items-center justify-content-sm-center" style="margin-right: 7px;">
+                        <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" href="#"><i class="fa fa-search" style="font-size: 25px;margin-right: 0px;"></i> </a>
+                            <div class="dropdown-menu"><a class="dropdown-item" href="#">First Item</a><a class="dropdown-item" href="#">Second Item</a><a class="dropdown-item" href="#">Third Item</a></div>
+                        </div>
+                    </li>
+                    <li class="nav-item d-flex justify-content-center align-items-center">
+                        <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle active" aria-expanded="false" data-bs-toggle="dropdown" href="#">&nbsp;<img class="rounded-circle" src="../assets/img/boy.jpg" style="width: 40px;border-width: 2px;border-style: solid;"></a>
+                            <div class="dropdown-menu dropdown-menu-end text-start shadow" style="margin-top: 16px;"><a class="dropdown-item" href="#">Pengaturan</a><a class="dropdown-item" href="#">Log Aktivitas</a><a class="dropdown-item" href="#">Pelanggaran</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Keluar</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <div id="sidenavAccordion" class="sb-sidenav accordion sb-sidenav-dark">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div>
+                                <div class="sb-sidenav-menu-heading"><span>Labeling</span></div><a class="nav-link active" href="admin.html">
+                                    <div class="sb-nav-link-icon"><i class="fa fa-dashboard"></i></div><span>Dashboard</span>
+                                </a>
+                            </div>
+                            <div>
+                                <div class="sb-sidenav-menu-heading"><span>Labeling</span></div><a class="nav-link collapsed" href="#" aria-expanded="false" aria-controls="collapseLayouts" data-bs-toggle="collapse" data-bs-target="#collapseLayouts">
+                                    <div class="sb-nav-link-icon"><i class="fa fa-dashboard"></i></div><span>Contenido</span>
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fa fa-angle-down"></i></div>
+                                </a>
+                                <div id="collapseLayouts" class="collapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                    <div class="sb-sidenav-menu-nested nav"><a class="nav-link" href="admin_noticias.html">Noticias</a><a class="nav-link" href="admin_faq.html">Preguntas Frecuentes</a></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="sb-sidenav-menu-heading"><span>Labeling</span></div><a class="nav-link collapsed" href="#" aria-expanded="false" aria-controls="collapse2" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                    <div class="sb-nav-link-icon"><i class="fa fa-dashboard"></i></div><span>Accordion 2 Layer</span>
+                                    <div class="sb-sidenav-collapse-arrow"><i class="fa fa-angle-down"></i></div>
+                                </a>
+                                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-bs-parent="#sidenavAccordion">
+                                    <div id="sidenavAccordionPages" class="sb-sidenav-menu-nested nav accordion"><a class="nav-link collapsed" href="#" aria-expanded="false" aria-controls="pagesCollapseAuth" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth"><span>Menu Item</span>
+                                            <div class="sb-sidenav-collapse-arrow"><i class="fa fa-angle-down"></i></div>
+                                        </a>
+                                        <div id="pagesCollapseAuth" class="collapse" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                            <div class="sb-sidenav-menu-nested nav"><a class="nav-link" href="#">Menu Item</a><a class="nav-link" href="#">Menu Item</a><a class="nav-link" href="#">Menu Item</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small"><span>Conectado como : [Usuario]</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="d-table" id="layoutSidenav_content">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-6">
+                            <h3 class="text-dark mb-4">CIDERE</h3>
+                        </div>
+                    </div>
+                </div>
+                <main>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-10 col-xxl-9">
+                            <div class="card shadow">
+                                <div class="card-header d-flex flex-wrap justify-content-center align-items-center justify-content-sm-between gap-3">
+                                    <h5 class="display-6 text-nowrap text-capitalize mb-0">Preguntas frecuentes</h5>
+                                    <div class="input-group input-group-sm w-auto"><input class="form-control form-control-sm" type="text" placeholder="Buscar..."><button class="btn btn-outline-primary btn-sm" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search mb-1">
+                                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
+                                            </svg></button></div><button class="btn btn-primary" type="button" data-bs-target="#modal-1" data-bs-toggle="modal">Agregar</button>
+                                </div>
+                                <div class="card-body">
+                                    <div class="table-responsive">
+                                        <table class="table table-striped table-hover">
+                                            <thead>
+                                                <tr>
+                                                    <th>ID</th>
+                                                    <th>Pregunta</th>
+                                                    <th>Respuesta</th>
+                                                    <th class="text-center">Acciones</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">1</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">¿Qué es CIDERE?</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">CIDERE es una corporación dedicada a promover y facilitar la colaboración entre empresas mineras en la región de Coquimbo, Chile. Nos enfocamos en crear un espacio industrial minero donde las empresas pueden encontrar proveedores y servicios de manera eficiente.</td>
+                                                    <td align="center"><button class="btn btn-success btn-default" data-bs-toggle="modal" data-bss-tooltip="" title="Editar" type="button" data-bs-target="#modal-1"><i class="far fa-edit" title="Editar"></i></button><a class="btn btn-danger" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Eliminar"><i class="far fa-trash-alt" title="Eliminar"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">2</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">¿Cómo puedo utilizar el Espacio Industrial Minero de CIDERE?</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">Para utilizar nuestro espacio, simplemente visita la página principal y utiliza el buscador. Ingresa el tipo de proveedor o servicio que necesitas, y nuestro sistema te conectará con empresas mineras de la región.</td>
+                                                    <td align="center"><a class="btn btn-success btn-default" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Editar"><i class="far fa-edit" title="Editar"></i></a><a class="btn btn-danger" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Eliminar"><i class="far fa-trash-alt" title="Eliminar"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">3</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">¿Es gratuito utilizar el servicio de búsqueda en CIDERE?</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">Sí, el servicio de búsqueda en el Espacio Industrial Minero de CIDERE es completamente gratuito. Queremos facilitar la conexión entre empresas mineras y proveedores en la región.</td>
+                                                    <td align="center"><a class="btn btn-success btn-default" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Editar"><i class="far fa-edit" title="Editar"></i></a><a class="btn btn-danger" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Eliminar"><i class="far fa-trash-alt" title="Eliminar"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">4</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">¿Cómo puedo registrarme como proveedor en CIDERE?</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">Si eres un proveedor que desea ser parte de nuestro espacio, puedes registrarte en el botón "Registrarse" en la esquina superior derecha de nuestra página, o también contáctanos a través de la sección de contacto. Estaremos encantados de discutir las oportunidades de colaboración.</td>
+                                                    <td align="center"><a class="btn btn-success btn-default" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Editar"><i class="far fa-edit" title="Editar"></i></a><a class="btn btn-danger" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Eliminar"><i class="far fa-trash-alt" title="Eliminar"></i></a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="text-truncate" style="max-width: 200px;">5</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">¿Qué tipo de empresas puedo encontrar en el Espacio Industrial Minero?</td>
+                                                    <td class="text-truncate" style="max-width: 200px;">En nuestro espacio, puedes encontrar una amplia variedad de empresas mineras y proveedores de servicios relacionados. Desde servicios de maquinaria hasta consultoría especializada, nuestro objetivo es abarcar todas las necesidades de la industria minera en Coquimbo.</td>
+                                                    <td align="center"><a class="btn btn-success btn-default" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Editar"><i class="far fa-edit" title="Editar"></i></a><a class="btn btn-danger" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Eliminar"><i class="far fa-trash-alt" title="Eliminar"></i></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <nav>
+                                        <ul class="pagination pagination-sm mb-0 justify-content-center">
+                                            <li class="page-item"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
+                                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title">Pregunta frecuente</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Pregunta:</p><input type="text">
+                                    <p>Respuesta:</p><textarea></textarea>
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cerrar sin guardar</button><button class="btn btn-primary" type="button">Guardar</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/noticias/animated.headline.js"></script>
+    <script src="../assets/js/noticias/contact.js"></script>
+    <script src="../assets/js/noticias/main.js"></script>
+    <script src="../assets/js/noticias/one-page-nav-min.js"></script>
+    <script src="../assets/js/noticias/plugins.js"></script>
+    <script src="../assets/js/noticias/site.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/jquery.tablesorter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-filter.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.2/js/widgets/widget-storage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://kit.fontawesome.com/9b8a7e18a0.js"></script>
+    <script src="../assets/js/Modal-faq.js"></script>
+    <script src="../assets/js/Responsive-News-Card-Slider-script.min.js"></script>
+</body>
+
+</html>

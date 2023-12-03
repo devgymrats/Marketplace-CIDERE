@@ -1,0 +1,2450 @@
+/* Theme Description
+-------------------------------------------------
+
+	  Theme Name:
+	  Author:
+	  Support:
+	  Description:
+	  Version:
+	  
+------------------------------------------------- */
+
+/* CSS Index
+-------------------------------------------------
+
+	1. Theme default css
+	2. header
+	3. slider
+	4. about-area
+	5. features-box
+	6. department
+	7. team
+	8. video-area
+	9. counter
+	10. footer
+
+------------------------------------------------- */
+
+/* -------------   Color variabel  -------------- */
+
+/* line 35, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 39, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 42, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* -------------Color include-------------- */
+
+/* -- Background color--- */
+
+/* line 84, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 87, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 90, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 93, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 96, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 99, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* --- color------ */
+
+/* line 105, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 108, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 111, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* ------------------- Responsive -------------------------- */
+
+/* @include transition(.4s);
+	color:$theme-color; */
+
+/* line 60, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_variables.scss */
+
+/* line 77, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_variables.scss */
+
+/* line 82, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_variables.scss */
+
+/* line 85, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_variables.scss */
+
+/* --
+    - Overlay
+------------------------------------------ */
+
+/* line 4, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_overlay.scss */
+
+/* line 9, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_overlay.scss */
+
+/* -- Overlay Opacity -- */
+
+/* line 22, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_overlay.scss */
+
+/* line 27, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_overlay.scss */
+
+/* line 32, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_overlay.scss */
+
+/* line 37, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_overlay.scss */
+
+/* line 42, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_overlay.scss */
+
+/* line 47, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_overlay.scss */
+
+/* line 52, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_overlay.scss */
+
+/* line 57, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_overlay.scss */
+
+/* line 62, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_overlay.scss */
+
+/* 1. Theme default css */
+
+/* line 8, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 13, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 27, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 38, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 41, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 44, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 49, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 53, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 56, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 59, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 62, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 66, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 70, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 75, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 78, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 81, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 87, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 92, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 93, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 97, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 104, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 108, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 117, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 121, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 125, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* Theme-overlay */
+
+/* line 133, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 136, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 146, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 150, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 160, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 164, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 177, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 181, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 185, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 185, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 185, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* owl-carousel button style */
+
+/* line 197, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 216, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 219, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 226, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 236, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 239, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* button style */
+
+/* line 281, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 305, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 323, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 333, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 336, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 340, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 347, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 367, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 385, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 390, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 395, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 409, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 428, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* button style */
+
+/* line 439, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* scrollUp */
+
+/* line 443, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 443, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 460, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* Sticky */
+
+/* line 465, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* Sticky end */
+
+/* --- Margin & Padding -- */
+
+/* -- Margin Top -- */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 490, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* -- Margin Bottom -- */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* -- Margin Left -- */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 499, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* -- Margin Right -- */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 504, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* -- Padding Top -- */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 509, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 511, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* -- Padding Bottom -- */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 516, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* -- Padding Left -- */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 521, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* -- Padding Right -- */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 526, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* -- Some Animated CSS -- */
+
+/* bounce-animate */
+
+/* line 537, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* heartbeat */
+
+/* line 567, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* rotateme */
+
+/* line 579, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* 20. preloader */
+
+/* line 611, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 627, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 648, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 651, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 669, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 672, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* -- Section Padding -- */
+
+/* line 716, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 716, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 716, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 716, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 716, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 716, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 741, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 741, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 741, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 741, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 741, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 762, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 762, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 762, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 762, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 762, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 762, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 786, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 786, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 786, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 786, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 786, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 786, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 810, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 810, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 810, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 810, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 810, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 810, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 834, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 834, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 834, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 834, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 834, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 834, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 852, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 852, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 852, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 852, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 852, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 852, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 871, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 871, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 871, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 871, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 871, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 871, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 897, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 897, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 897, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 897, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 897, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 897, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 924, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 924, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 924, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 924, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 924, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 924, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 949, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 949, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 949, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 949, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 949, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* line 949, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_common.scss */
+
+/* -------------   Color variabel  -------------- */
+
+/* line 35, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 39, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 42, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* -------------Color include-------------- */
+
+/* -- Background color--- */
+
+/* line 84, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 87, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 90, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 93, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 96, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 99, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* --- color------ */
+
+/* line 105, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 108, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 111, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_color.scss */
+
+/* line 3, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 3, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 3, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 3, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 3, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 3, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 21, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 21, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 21, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 21, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 21, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 21, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 44, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 44, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 44, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 58, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 64, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 67, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 75, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 77, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 81, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 92, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 95, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 100, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 105, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 105, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 119, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 124, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 136, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 139, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 144, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 163, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 171, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 180, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 188, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 192, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 196, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 199, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 205, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 209, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 212, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 216, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 220, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_headerMenu.scss */
+
+/* line 2, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 2, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 2, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 2, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 17, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 17, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 26, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 29, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 29, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 29, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 29, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 51, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 51, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 68, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 71, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 89, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 104, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 125, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 130, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 134, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 137, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 140, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 145, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 145, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 145, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 157, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 157, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 164, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 169, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 173, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_h1-hero.scss */
+
+/* line 1, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 6, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 16, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 18, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 24, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 34, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 37, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 43, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 55, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 55, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 55, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 55, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 81, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 90, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 100, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 103, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 105, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 112, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 120, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 122, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 128, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 138, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 141, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 147, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 159, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 159, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 159, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 182, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 191, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 201, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 201, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 208, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 210, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 222, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 226, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 232, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 236, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_team.scss */
+
+/* line 3, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_we-trusted.scss */
+
+/* line 3, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_we-trusted.scss */
+
+/* line 3, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_we-trusted.scss */
+
+/* line 3, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_we-trusted.scss */
+
+/* line 16, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_we-trusted.scss */
+
+/* line 16, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_we-trusted.scss */
+
+/* line 16, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_we-trusted.scss */
+
+/* line 16, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_we-trusted.scss */
+
+/* line 16, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_we-trusted.scss */
+
+/* line 35, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_we-trusted.scss */
+
+/* line 35, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_we-trusted.scss */
+
+/* line 47, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_we-trusted.scss */
+
+/* line 2, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 7, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 2, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 2, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 2, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 22, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 31, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 31, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 31, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 44, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 49, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 49, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 68, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 73, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 82, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 82, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services_section.scss */
+
+/* line 1, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 7, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 7, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 7, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 7, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 7, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 7, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 31, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 31, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 43, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 43, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 52, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 58, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 58, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 74, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 81, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 85, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 88, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 98, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 108, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 115, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 118, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 118, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 118, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 118, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 133, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_completed-cases.scss */
+
+/* line 1, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 1, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 1, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 1, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 14, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 14, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 14, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 34, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 36, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 42, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 47, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* Homepage1 Testimonial */
+
+/* line 58, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 58, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 58, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 91, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 91, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 98, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 98, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 104, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 104, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 110, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 116, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 125, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 131, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 148, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_testimonial.scss */
+
+/* line 3, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_recent.scss */
+
+/* line 5, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_recent.scss */
+
+/* line 11, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_recent.scss */
+
+/* line 14, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_recent.scss */
+
+/* line 21, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_recent.scss */
+
+/* line 26, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_recent.scss */
+
+/* line 32, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_recent.scss */
+
+/* line 40, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_recent.scss */
+
+/* line 1, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_requestBack.scss */
+
+/* line 1, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_requestBack.scss */
+
+/* line 1, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_requestBack.scss */
+
+/* line 1, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_requestBack.scss */
+
+/* line 14, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_requestBack.scss */
+
+/* line 14, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_requestBack.scss */
+
+/* line 24, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_requestBack.scss */
+
+/* line 24, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_requestBack.scss */
+
+/* line 24, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_requestBack.scss */
+
+/* line 38, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_requestBack.scss */
+
+/* line 48, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_requestBack.scss */
+
+/* line 58, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_requestBack.scss */
+
+/* line 66, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_requestBack.scss */
+
+/* line 70, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_requestBack.scss */
+
+/* line 1, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 3, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 7, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 7, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 7, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 7, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 7, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 7, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 30, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 35, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 43, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 46, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 49, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 59, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 61, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 63, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 70, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 84, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 89, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 94, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 109, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 111, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 111, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 119, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 125, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 128, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_footer.scss */
+
+/* line 3, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services.scss */
+
+/* line 11, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services.scss */
+
+/* line 22, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_services.scss */
+
+/* Start Blog Area css
+============================================================================================ */
+
+/* line 5, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 10, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 14, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 24, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 28, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 32, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 36, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 49, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 56, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 66, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 74, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 84, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 74, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 98, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 104, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 24, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 112, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 116, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 121, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 112, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 135, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 143, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 149, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 157, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 160, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 160, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 179, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 185, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 195, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 200, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* End Blog Area css
+============================================================================================ */
+
+/* Latest Blog Area css
+============================================================================================ */
+
+/* line 224, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 228, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 234, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 247, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* End Latest Blog Area css
+============================================================================================ */
+
+/* Causes Area css
+============================================================================================ */
+
+/* line 263, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 267, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 274, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 285, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 288, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 291, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 299, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 307, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 320, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 323, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 336, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 346, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 358, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* End Causes Area css
+============================================================================================ */
+
+/* ================= latest_blog_area css ============= */
+
+/* line 374, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 378, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 381, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 384, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 389, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 392, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 403, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 410, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 417, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 431, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* ========= blog_categorie_area css =========== */
+
+/* line 438, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 438, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 438, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 454, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 459, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 463, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 476, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 494, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 501, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 510, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* ============ blog_left_sidebar css ============== */
+
+/* line 525, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 529, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 529, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 537, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 541, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 544, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 549, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 549, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 563, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 567, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 571, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 577, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 583, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 588, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 596, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 599, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 599, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 615, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 615, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 627, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 627, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 647, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 652, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 660, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 664, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 672, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 681, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 685, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 694, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 702, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 705, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 716, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 725, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 729, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 738, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 745, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 758, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 763, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 767, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 772, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 777, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 794, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 799, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 810, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 816, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 823, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 831, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 834, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 845, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 860, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 866, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 966, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 987, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 991, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1008, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1020, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1027, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* ============ Start Blog Single Styles  ============= */
+
+/* line 1052, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1057, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1060, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1064, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1077, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1080, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1090, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1090, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1104, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1104, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1114, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1117, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1124, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1129, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1133, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1137, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1140, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1147, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1150, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1159, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1163, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1167, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1185, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1185, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1194, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1194, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1207, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1211, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1216, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1221, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1228, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1233, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1237, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1243, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1246, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1250, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1255, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1262, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1267, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1243, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1278, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1281, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1285, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1290, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1297, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1302, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1310, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1317, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1317, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1328, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1335, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1344, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1347, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1351, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1357, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1361, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1365, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1372, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1375, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1381, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1388, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1394, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1411, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1419, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1423, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1431, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1431, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1440, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1440, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1448, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1456, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1461, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1466, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1471, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1477, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1483, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1489, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* line 1495, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_blog_page.scss */
+
+/* ============ End Blog Single Styles  ============= */
+
+/* =================== contact banner start ==================== */
+
+/* line 3, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 10, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 13, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 16, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 24, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 30, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 36, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* =================== contact banner end ==================== */
+
+/* =================== contact form start ==================== */
+
+/* line 45, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 53, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 57, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 61, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 69, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 74, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 80, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* =================== contact form end ==================== */
+
+/* Contact Success and error Area css
+============================================================================================ */
+
+/* line 97, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 106, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 112, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 121, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 126, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 133, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 133, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 133, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 141, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 146, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_contact.scss */
+
+/* line 1, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 4, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 7, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 10, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 10, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 10, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 22, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 22, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 22, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 38, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 38, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 38, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 57, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 63, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 67, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 101, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 116, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 125, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 131, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 131, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 146, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 151, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 151, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 162, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 189, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 208, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 215, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_bradcam.scss */
+
+/* line 1, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_extend.scss */
+
+/* line 13, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_extend.scss */
+
+/* line 76, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 81, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 86, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 95, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 105, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 106, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 114, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 117, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 123, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 134, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 137, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 141, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 144, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 147, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 150, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 153, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 156, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 163, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 167, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 171, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 176, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 179, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 185, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 189, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 195, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 199, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 205, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 209, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 215, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 219, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 225, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 229, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 235, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 239, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 245, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 249, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 255, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 259, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 265, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 269, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 275, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 279, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 285, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 290, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 296, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 301, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 307, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 315, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 321, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 325, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 329, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 333, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 336, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 339, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 343, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 345, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 355, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 359, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 367, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 372, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 376, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 379, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 382, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 385, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 388, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 391, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 394, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 397, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 400, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 409, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 417, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 423, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 427, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 441, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 443, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 448, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 456, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 462, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 470, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 476, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 483, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 491, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 496, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 498, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 503, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 508, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 513, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 523, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 528, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 536, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 542, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 550, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 556, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 564, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 570, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 577, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 587, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 600, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 607, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 614, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 623, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 631, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 645, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 661, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 664, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 672, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 679, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 688, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 696, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 710, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 726, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 729, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 737, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 744, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 753, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 766, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 774, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 781, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 790, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 803, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 811, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 818, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 827, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 839, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 844, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 852, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 859, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 868, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 881, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 889, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 896, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 905, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 918, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 926, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 933, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 942, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 954, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 959, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 967, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 969, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 976, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 983, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 990, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 994, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1001, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1005, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1010, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1013, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1021, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1028, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1035, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1039, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1046, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1050, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1054, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1057, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1061, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1064, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* line 1067, ../../SAIFUL/Running_project/248. Magazine & News/assets/scss/_elements.scss */
+
+/* # sourceMappingURL=main.css.map */
+
+@media (min-width: 992px) {
+  .far.fa-calendar-alt {
+    padding: 7px;
+  }
+}
+
+@media (min-width: 576px) {
+  .far.fa-calendar-alt {
+  }
+}
+
