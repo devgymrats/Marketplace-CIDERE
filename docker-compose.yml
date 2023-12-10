@@ -3,24 +3,25 @@ version: "3.8"
 services:
   nginx:
     image: nginx:latest
+    container_name: nginx
     # restart: always
     ports:
       - "8080:80"
     volumes:
-      # - ./nginx-conf:/etc/nginx/conf.d
-      - ./static:/usr/share/nginx/html:ro
-
-  postgres:
+      - #./nginx-conf:/etc/nginx/conf.d
+      - ./static/Assets/:/usr/share/nginx/html:ro
+  db:
     image: postgres:latest
+    container_name: postgres
     restart: always
     environment:
-      DATABASE_HOST: 127.0.0.1
+      DATABASE_HOST: 192.168.1.85
       POSTGRES_USER: cidere
       POSTGRES_PASSWORD: cidere123
       POSTGRES_DB: cidere
     ports:
-      - 5432:5432
+      - "4321:5432"
     volumes:
-      - ./postgres-data:/var/lib/postgresql/data
+      - ./backend/database:/var/lib/postgresql/data
       - ./init.sql:/docker-entrypoint-initdb.d/init.sql
 

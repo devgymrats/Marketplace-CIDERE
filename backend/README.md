@@ -53,3 +53,40 @@ Para instalar las dependencias
 | fecha       | si         | date        |
 | review      | si         | varchar(255)|
 | puntuacion  | si         | int         |
+
+
+### Noticias
+#### GET
+`Lista de todas las noticias:` [/noticias](localhost:5000/noticias)
+
+#### Parametros:
+
+| nombre      | obligatorio| tipo        |
+|-------------|------------| ------------|
+| titulo      | si         | varchar(255)|
+| noticia     | si         | TEXT        |
+| fecha       | si         | date        |
+| imagen      | si         | varchar(50) |
+
+
+#### GET
+`Noticia con ID:` [/noticias/id](localhost:5000/noticias/id)
+
+#### Parametros:
+
+`/id`: identificador de la noticia
+
+Los mismos que la peticion anterior
+
+### respuesta:
+```
+   "noticias": [
+        {
+            "id": 1,
+            "titulo": "Alianza Histórica entre Empresas Mineras y Comunidades Locales en Coquimbo",
+            "noticia": "En un esfuerzo por fortalecer los lazos entre la industria...",
+            "fecha": "2023-01-01T00:00:00.000Z",
+            "imagen": "Perfil 1.jpg"
+        }
+    ]
+```
