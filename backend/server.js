@@ -28,8 +28,13 @@ app.get('/', (req, res) => {
 app.post('/review', (req, res) => {
   const data = req.body;
   // Inserción en PostgreSQL
-  const query = 'INSERT INTO reviews (fecha, review, puntuacion) VALUES ($1, $2, $3)';
-  const values = [data.fecha,data.review,data.puntuacion];
+  const query = 'INSERT INTO reviews (nombre, fecha, review, puntuacion) VALUES ($1, $2, $3, $4)';
+  const values = [
+    data.nombre, 
+    data.fecha,
+    data.review,
+    data.puntuacion
+  ];
 
   pool.query(query, values, (error, result) => {
     if (error) {
