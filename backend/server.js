@@ -42,8 +42,9 @@ app.post('/review', (req, res) => {
   });
 });
 
+
 app.get('/reviews', (req, res) => {
-  // Consulta SELECT *
+
   const query = 'SELECT * FROM reviews';
 
   pool.query(query, (error, result) => {
@@ -59,6 +60,7 @@ app.get('/reviews', (req, res) => {
   });
 });
 
+//Lista de todas las noticias
 app.get('/noticias',(req,res) =>{
   const query = 'SELECT * FROM noticias';
 
@@ -75,6 +77,7 @@ app.get('/noticias',(req,res) =>{
    });
 });
 
+//Recuperar noticia por id
 app.get('/noticias/:id', async(req,res) =>{
   const idNoticia= req.params.id;
   
@@ -89,6 +92,27 @@ app.get('/noticias/:id', async(req,res) =>{
     }
   } catch (error) {
     console.error('Error en la consulta de noticia a la base de datos:', error);
+    res.status(500).json({ error: 'Error en el servidor' });
+  }
+});
+
+//Insertar noticia
+app.post('/noticia', async(req,res) =>{
+  const {titulo, noticia, fecha, imagen} = req.body;
+
+
+  try {
+  
+    const result = await pool.query(
+      'INSERT INTO noticias(titulo, noticia, fecha, imagen) VALUES ($1,$2,$3,$4)',
+      [titulo, noticia, fecha, imagen]
+    );
+  
+    const nuevaNoticia = result.rows[0];
+    res.status(201).json(nuevaNoticia);
+
+  } catch (error) {
+    console.error('Error en la inserccion de noticia a la base de datos:', error);
     res.status(500).json({ error: 'Error en el servidor' });
   }
 });

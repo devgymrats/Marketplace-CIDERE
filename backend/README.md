@@ -31,11 +31,12 @@ Para instalar las dependencias
 #### GET
 `Lista de todos los comentarios:` [/reviews](localhost:5000/reviews)
 
-### respuesta:
+#### respuesta:
 ```
    "reviews": [
         {
             "id": 1,
+            "nombre": "Minerales del Valle",
             "fecha": "2023-01-01T04:00:00.000Z",
             "review": "Muy bueno, primer comentario",
             "puntuacion": 5
@@ -50,6 +51,7 @@ Para instalar las dependencias
 
 | nombre      | obligatorio| tipo        |
 |-------------|------------| ------------|
+| nombre      | si         | varchar(255)|       
 | fecha       | si         | date        |
 | review      | si         | varchar(255)|
 | puntuacion  | si         | int         |
@@ -59,26 +61,7 @@ Para instalar las dependencias
 #### GET
 `Lista de todas las noticias:` [/noticias](localhost:5000/noticias)
 
-#### Parametros:
-
-| nombre      | obligatorio| tipo        |
-|-------------|------------| ------------|
-| titulo      | si         | varchar(255)|
-| noticia     | si         | TEXT        |
-| fecha       | si         | date        |
-| imagen      | si         | varchar(50) |
-
-
-#### GET
-`Noticia con ID:` [/noticias/id](localhost:5000/noticias/id)
-
-#### Parametros:
-
-`/id`: identificador de la noticia
-
-Los mismos que la peticion anterior
-
-### respuesta:
+#### Respuesta:
 ```
    "noticias": [
         {
@@ -87,6 +70,34 @@ Los mismos que la peticion anterior
             "noticia": "En un esfuerzo por fortalecer los lazos entre la industria...",
             "fecha": "2023-01-01T00:00:00.000Z",
             "imagen": "Perfil 1.jpg"
-        }
+        },
+        {...}
     ]
 ```
+
+`Noticia con ID:` [/noticias/id](localhost:5000/noticias/id)
+
+#### Parametros:
+
+`/id`: identificador de la noticia
+
+#### Respuesta:
+```
+{
+    "titulo": "Noticia de prueba 3",
+    "noticia": "Noticia de prueba",
+    "fecha": "2023-01-01T00:00:00.000Z",
+    "imagen": "Noticia de prueba.jpg"
+}
+```
+#### POST
+`Insertar Noticia:` [/noticia](localhost:5000/noticia)
+
+#### Parametros:
+
+| nombre      | obligatorio| tipo        |
+|-------------|------------| ------------|
+| titulo      | si         | varchar(255)|
+| noticia     | si         | TEXT        |
+| fecha       | si         | date        |
+| imagen      | si         | varchar(50) |

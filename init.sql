@@ -3,12 +3,13 @@
 
 CREATE TABLE reviews(
 id SERIAL PRIMARY KEY,
+nombre varchar(255),
 fecha date,
 review varchar(255),
 puntuacion int
 );   
-|
-INSERT INTO reviews(fecha, review, puntuacion) VALUES ('2023-01-01', 'Muy bueno, primer comentario', 5);
+
+INSERT INTO reviews(nombre,fecha, review, puntuacion) VALUES ('Minerales del Valle','2023-01-01', 'Muy bueno, primer comentario', 5);
 
 
 CREATE TABLE noticias(
