@@ -1,18 +1,21 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const { Pool } = require('pg');
+const { pool } = require('./dbConfig');
+const bcrypt = require("bcrypt");
+const session = require("express-session");
+const flash = require("express-flash");
 
-// Configuración de la conexión a PostgreSQL
-const pool = new Pool({
-  user: 'cidere',
-  host: 'localhost',
-  database: 'cidere',
-  password: 'cidere123',
-  port: 4321 // El puerto por defecto de PostgreSQL es 5432
-});
 
-app.use(bodyParser.json())
+app.use(bodyParser.json());
+app.use(express.urlencoded({extended: false}));
+app.use(session({
+  secret: 'secret',
+  resave: false,
+  saveUnitialized: false
+}));
+
+app.use(flash());
 
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
@@ -112,16 +115,101 @@ app.post('/noticia', async(req,res) =>{
       'INSERT INTO noticias(titulo, noticia, fecha, imagen) VALUES ($1,$2,$3,$4)',
       [titulo, noticia, fecha, imagen]
     );
-  
-    const nuevaNoticia = result.rows[0];
-    res.status(201).json(nuevaNoticia);
+
+    res.status(201).json({mensaje: "Noticia insertada correctamente"});
 
   } catch (error) {
     console.error('Error en la inserccion de noticia a la base de datos:', error);
+    res.status(500).json({ error: 'Error al insertar la noticia el servidor' });
+  }
+});
+
+//Lista de mineras
+app.get('/usuarios/mineras', async(req,res) =>{
+
+  try {
+    const result = await pool.query("SELECT * FROM usuarios WHERE tipo = 'minera'");
+    const usuarios = result.rows[0];
+
+    if (usuarios) {
+      res.json(usuarios);
+    } else {
+      res.status(404).json({ error: 'No existen mineras' });
+    }
+  } catch (error) {
+    console.error('Error en la consulta de mineras a la base de datos:', error);
     res.status(500).json({ error: 'Error en el servidor' });
   }
 });
 
+app.post('/usuarios/registrarse', async (req,res) => {
+  let  {rut , contraseña, contraseña2} = req.body;
+  console.log({
+    rut,
+    contraseña,
+    contraseña2
+  });
+  let errors = [];
+
+  if(!rut || contraseña || contraseña2){
+    errors.push({message: 'Por favor rellene todos los campos'})
+  }
+
+  if(contraseña!=contraseña2){
+    errors.push({message: "Las contraseñas no coinciden"})
+  }
+
+  if(errors.length>0){
+    res.send("Error")
+  }else{
+    let hashedPassword = await bcrypt.hash(contraseña, 10);
+    pool.query("SELECT * FROM credenciales WHERE rut = $1",[rut], (err,results) => {
+        if(err){
+          throw err;
+        }
+
+        console.log(results.rows);
+
+        if(results.rows.length>0){
+          errors.push({message:" El rut ya se encuentra registrado"});
+          //escribir errores en la pagina
+        }else{
+          pool.query("INSERT INTO credenciales (rut,contraseña) VALUES ($1, $2) RETURNING id, contraseña",
+          [rut,hashedPassword],
+          (err, results) => {
+            if(err){
+              throw err;
+            }
+            console.log()
+          })
+        }
+    }
+      
+    )
+  };
+
+
+ 
+
+});
+
+
+app.get('/preguntas', async(req,res) =>{
+
+  try {
+    const result = await pool.query("SELECT * FROM usuarios WHERE tipo = 'minera'");
+    const usuarios = result.rows[0];
+
+    if (usuarios) {
+      res.json(usuarios);
+    } else {
+      res.status(404).json({ error: 'No existen mineras' });
+    }
+  } catch (error) {
+    console.error('Error en la consulta de mineras a la base de datos:', error);
+    res.status(500).json({ error: 'Error en el servidor' });
+  }
+});
 
 
 
