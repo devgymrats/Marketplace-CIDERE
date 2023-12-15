@@ -1,0 +1,74 @@
+400;600;700&display=swap'); * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  margin: 80px auto;
+  max-width: 580px;
+}
+
+.accordion__item {
+  background: #fffffe;
+  border-radius: 4px;
+}
+
+.accordion__item:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.accordion__header {
+  padding: 20px;
+  padding-right: 50px;
+  font-weight: 600;
+  font-size: 1.25rem;
+  color: #094067;
+  position: relative;
+  cursor: pointer;
+}
+
+.accordion__header::after {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  right: 20px;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: url("https://cdn.statically.io/gist/koptyaisky/33f5da3d9e6b6cacdf5a353ad033c2ea/raw/c8468a17e0141ee82a2571deea1f76162abb47b6/arrow-down-blue.svg") no-repeat center;
+  background-size: contain;
+  transition: all .4s ease;
+}
+
+.accordion__body {
+  padding: 0 40px 20px 20px;
+  font-weight: 300;
+  /*font-size: 0.875rem;*/
+  color: #323232;
+  line-height: 1.5;
+  display: none;
+}
+
+.open-accordion .accordion__body {
+  display: block;
+}
+
+.open-accordion .accordion__header::after {
+  transform: rotate(-180deg);
+}
+
+.sort_lession_pointer {
+  cursor: n-resize;
+}
+
+.bg-tag {
+  background-color: #bf1010;
+  color: #fff;
+  /*border-right: 2px solid #ECECEC;*/
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+

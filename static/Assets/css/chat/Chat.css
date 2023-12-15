@@ -1,0 +1,36 @@
+img {
+  border-radius: 5px;
+}
+
+* {
+  outline: none;
+}
+
+* {
+  /*box-sizing: inherit;*/
+}
+
+*:before, *:after {
+  /*box-sizing: inherit;*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.chat-buscar {
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px var(--gray-dark);
+  border-width: 1.4px;
+  border-style: solid;
+}
+
+.chat-box {
+  overflow-x: none;
+  overflow-y: auto;
+  max-height: 32.5rem;
+  height: auto;
+}
+

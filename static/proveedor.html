@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="es-419">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CIDERE módulo 3</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Indic+Siyaq+Numbers&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="assets/fonts/typicons.min.css">
+    <link rel="stylesheet" href="assets/css/chat/botones.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="assets/css/proveedor/Accordion-with-custom-design.css">
+    <link rel="stylesheet" href="assets/css/proveedor/Floating-Link.css">
+    <link rel="stylesheet" href="assets/css/proveedor/proveedor.css">
+    <link rel="stylesheet" href="assets/css/proveedor/Request-review-form-1-5-stars-BS5.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-body navbar-dark" id="app-navbar" style="padding-top: 0px;padding-bottom: 0px;">
+        <div class="container-fluid"><a class="navbar-brand" href="#"><img src="assets/img/logo%20EIM%20shadowed.png" width="126" height="54"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Proveedores</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link active" id="openModal" data-bs-target="#modal-faq" data-bs-toggle="modal" href="#">Preguntas Frecuentes</a></li>
+                </ul>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modal-faq">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="text-center text-success modal-title" style="padding-top: 15px;padding-bottom: 15px;color: #1b6ce5!important;">Preguntas Frecuentes</h2><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-11 offset-md-3 offset-lg-0">
+                                        <div id="faqlist" class="accordion accordion-flush">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-1">¿Qué es CIDERE?</button></h2>
+                                                <div id="content-accordion-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                                    <p class="accordion-body"> CIDERE es una corporación dedicada a promover y facilitar la colaboración entre empresas mineras en la región de Coquimbo, Chile. Nos enfocamos en crear un espacio industrial minero donde las empresas pueden encontrar proveedores y servicios de manera eficiente.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-2">¿Cómo puedo utilizar el Espacio Industrial Minero de CIDERE?</button></h2>
+                                                <div id="content-accordion-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                                    <p class="accordion-body"> Para utilizar nuestro espacio, simplemente visita la página principal y utiliza el buscador. Ingresa el tipo de proveedor o servicio que necesitas, y nuestro sistema te conectará con empresas mineras de la región.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-3">¿Es gratuito utilizar el servicio de búsqueda en CIDERE?</button></h2>
+                                                <div id="content-accordion-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                                    <p class="accordion-body"> Sí, el servicio de búsqueda en el Espacio Industrial Minero de CIDERE es completamente gratuito. Queremos facilitar la conexión entre empresas mineras y proveedores en la región.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-4">¿Cómo puedo registrarme como proveedor en CIDERE?</button></h2>
+                                                <div id="content-accordion-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                                    <p class="accordion-body"> Si eres un proveedor que desea ser parte de nuestro espacio, puedes registrarte en el botón "Registrarse" en la esquina superior derecha de nuestra página, o también contáctanos a través de la sección de contacto. Estaremos encantados de discutir las oportunidades de colaboración.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-5">¿Qué tipo de empresas puedo encontrar en el Espacio Industrial Minero?</button></h2>
+                                                <div id="content-accordion-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                                    <p class="accordion-body"> En nuestro espacio, puedes encontrar una amplia variedad de empresas mineras y proveedores de servicios relacionados. Desde servicios de maquinaria hasta consultoría especializada, nuestro objetivo es abarcar todas las necesidades de la industria minera en Coquimbo.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="ms-auto navbar-text actions" style="text-align: right;"><a class="active login" href="login.html" style="color: rgba(255,255,255,0.91);">Acceder</a> <a class="btn btn-light action-button" role="button" href="signup.html" style="color: rgba(0,0,0,0.9);background: rgba(255,214,0,0.97);border-radius: 10px;border-style: solid;border-color: rgba(0,0,0,0.9);font-size: 16px;padding: 5px 8px;">Registrarse</a></p>
+            </div>
+        </div>
+    </nav>
+    <section style="width: 100%;height: 100%;">
+        <header class="text-white text-center">
+            <div class="container" style="height: 79px;margin-bottom: 14px;"><button class="btn btn-proveedor bn18" type="button" onclick="conectar()">Conectar con este proveedor</button></div>
+            <div class="container pb-5">
+                <div class="row">
+                    <div class="col-md-6 col-xl-5 offset-xl-0 d-grid align-content-stretch empresa">
+                        <div class="row">
+                            <div class="col" style="border-bottom-width: 0.5px;border-bottom-color: var(--bs-body-color);"><img class="rounded img-fluid flex-shrink-1 align-items-sm-center ratio ratio-16x9" id="avatar" src="assets/img/sample%20mountian.jpg" width="296" height="222" loading="auto" style="box-shadow: 6px 6px var(--bs-border-color-translucent);width: 227.2px;margin: 20px;"></div>
+                        </div>
+                        <div class="row datos" style="border-top-style: groove;">
+                            <div class="col-xl-2 d-xl-flex align-items-xl-center datos" id="icono"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-32 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-4" style="display: grid;position: relative;font-size: 22px;">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M272 304h-96C78.8 304 0 382.8 0 480c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32C448 382.8 369.2 304 272 304zM48.99 464C56.89 400.9 110.8 352 176 352h96c65.16 0 119.1 48.95 127 112H48.99zM224 256c70.69 0 128-57.31 128-128c0-70.69-57.31-128-128-128S96 57.31 96 128C96 198.7 153.3 256 224 256zM224 48c44.11 0 80 35.89 80 80c0 44.11-35.89 80-80 80S144 172.1 144 128C144 83.89 179.9 48 224 48z"></path>
+                                </svg></div>
+                            <div class="col text-start d-grid flex-row-reverse">
+                                <div class="row">
+                                    <div class="col"><strong class="fs-5 text-start text-body-emphasis d-xl-flex justify-content-xl-start">Nombre de empresa</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col"><small class="text-start text-body d-xl-flex justify-content-xl-start">Nombre de fantasía</small></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-xl-flex justify-content-xl-start" style="border-top-style: groove;border-bottom-style: groove;">
+                            <div class="col-xl-2 d-xl-flex align-items-xl-center" style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-4">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M256 112c-48.6 0-88 39.4-88 88C168 248.6 207.4 288 256 288s88-39.4 88-88C344 151.4 304.6 112 256 112zM256 240c-22.06 0-40-17.95-40-40C216 177.9 233.9 160 256 160s40 17.94 40 40C296 222.1 278.1 240 256 240zM256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 464c-46.73 0-89.76-15.68-124.5-41.79C148.8 389 182.4 368 220.2 368h71.69c37.75 0 71.31 21.01 88.68 54.21C345.8 448.3 302.7 464 256 464zM416.2 388.5C389.2 346.3 343.2 320 291.8 320H220.2c-51.36 0-97.35 26.25-124.4 68.48C65.96 352.5 48 306.3 48 256c0-114.7 93.31-208 208-208s208 93.31 208 208C464 306.3 446 352.5 416.2 388.5z"></path>
+                                </svg></div>
+                            <div class="col text-start d-grid flex-row-reverse">
+                                <div class="row">
+                                    <div class="col"><strong class="fs-5 text-start text-body-emphasis d-xl-flex justify-content-xl-start">Razón Social</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col"><small class="text-start text-body d-xl-flex justify-content-xl-start">Razón Social</small></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-xl-flex justify-content-xl-start" style="border-top-style: groove;border-bottom-style: groove;">
+                            <div class="col-xl-2 d-xl-flex align-items-xl-center" style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -32 576 576" width="1em" height="1em" fill="currentColor" class="fs-4">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M368 344h96c13.25 0 24-10.75 24-24s-10.75-24-24-24h-96c-13.25 0-24 10.75-24 24S354.8 344 368 344zM208 320c35.35 0 64-28.65 64-64c0-35.35-28.65-64-64-64s-64 28.65-64 64C144 291.3 172.7 320 208 320zM512 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h448c35.35 0 64-28.65 64-64V96C576 60.65 547.3 32 512 32zM528 416c0 8.822-7.178 16-16 16h-192c0-44.18-35.82-80-80-80h-64C131.8 352 96 387.8 96 432H64c-8.822 0-16-7.178-16-16V160h480V416zM368 264h96c13.25 0 24-10.75 24-24s-10.75-24-24-24h-96c-13.25 0-24 10.75-24 24S354.8 264 368 264z"></path>
+                                </svg></div>
+                            <div class="col text-start d-grid flex-row-reverse">
+                                <div class="row">
+                                    <div class="col"><strong class="fs-5 text-start text-body-emphasis d-xl-flex justify-content-xl-start">1.111.111-1</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col"><small class="text-start text-body d-xl-flex justify-content-xl-start">Rut</small></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-xl-flex justify-content-xl-start" style="border-top-style: groove;border-bottom-style: groove;">
+                            <div class="col-xl-2 d-xl-flex align-items-xl-center" style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" fill="none" class="fs-4">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21ZM14.8055 18.4151C17.1228 17.4003 18.7847 15.1667 18.9806 12.525C18.1577 12.9738 17.12 13.3418 15.9371 13.598C15.7882 15.4676 15.3827 17.1371 14.8055 18.4151ZM9.1945 5.58487C7.24725 6.43766 5.76275 8.15106 5.22208 10.244C5.4537 10.4638 5.84813 10.7341 6.44832 11.0008C6.89715 11.2003 7.42053 11.3798 8.00537 11.5297C8.05853 9.20582 8.50349 7.11489 9.1945 5.58487ZM10.1006 13.9108C10.2573 15.3675 10.5852 16.6202 10.9992 17.5517C11.2932 18.2133 11.5916 18.6248 11.8218 18.8439C11.9037 18.9219 11.9629 18.9634 12 18.9848C12.0371 18.9634 12.0963 18.9219 12.1782 18.8439C12.4084 18.6248 12.7068 18.2133 13.0008 17.5517C13.4148 16.6202 13.7427 15.3675 13.8994 13.9108C13.2871 13.9692 12.6516 14 12 14C11.3484 14 10.7129 13.9692 10.1006 13.9108ZM8.06286 13.598C8.21176 15.4676 8.61729 17.1371 9.1945 18.4151C6.8772 17.4003 5.21525 15.1666 5.01939 12.525C5.84231 12.9738 6.88001 13.3418 8.06286 13.598ZM13.9997 11.8896C13.369 11.9609 12.6993 12 12 12C11.3008 12 10.631 11.9609 10.0003 11.8896C10.0135 9.66408 10.4229 7.74504 10.9992 6.44832C11.2932 5.78673 11.5916 5.37516 11.8218 5.15605C11.9037 5.07812 11.9629 5.03659 12 5.01516C12.0371 5.03659 12.0963 5.07812 12.1782 5.15605C12.4084 5.37516 12.7068 5.78673 13.0008 6.44832C13.5771 7.74504 13.9865 9.66408 13.9997 11.8896ZM15.9946 11.5297C15.9415 9.20582 15.4965 7.11489 14.8055 5.58487C16.7528 6.43766 18.2373 8.15107 18.7779 10.244C18.5463 10.4638 18.1519 10.7341 17.5517 11.0008C17.1029 11.2003 16.5795 11.3798 15.9946 11.5297Z" fill="currentColor"></path>
+                                </svg></div>
+                            <div class="col text-start d-grid flex-row-reverse">
+                                <div class="row">
+                                    <div class="col"><strong class="fs-5 text-start text-body-emphasis d-xl-flex justify-content-xl-start">https://www.test.cl/</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col"><small class="text-start text-body d-xl-flex justify-content-xl-start">Razón Social</small></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-xl-flex justify-content-xl-start" style="border-top-style: groove;border-bottom-style: groove;">
+                            <div class="col-xl-2 d-xl-flex align-items-xl-center" style="display: flex;"><i class="material-icons fs-4">location_on</i></div>
+                            <div class="col text-start d-grid flex-row-reverse">
+                                <div class="row">
+                                    <div class="col"><strong class="fs-5 text-start text-body-emphasis d-xl-flex justify-content-xl-start">Avenida calle número población</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col"><small class="text-start text-body d-xl-flex justify-content-xl-start">Dirección</small></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row d-xl-flex justify-content-xl-start" style="border-top-style: groove;border-bottom-style: groove;">
+                            <div class="col-xl-2 d-xl-flex align-items-xl-center" style="display: flex;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 512 512" width="1em" height="1em" fill="currentColor" class="fs-4">
+                                    <!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc. -->
+                                    <path d="M88 104C88 95.16 95.16 88 104 88H152C160.8 88 168 95.16 168 104V152C168 160.8 160.8 168 152 168H104C95.16 168 88 160.8 88 152V104zM280 88C288.8 88 296 95.16 296 104V152C296 160.8 288.8 168 280 168H232C223.2 168 216 160.8 216 152V104C216 95.16 223.2 88 232 88H280zM88 232C88 223.2 95.16 216 104 216H152C160.8 216 168 223.2 168 232V280C168 288.8 160.8 296 152 296H104C95.16 296 88 288.8 88 280V232zM280 216C288.8 216 296 223.2 296 232V280C296 288.8 288.8 296 280 296H232C223.2 296 216 288.8 216 280V232C216 223.2 223.2 216 232 216H280zM0 64C0 28.65 28.65 0 64 0H320C355.3 0 384 28.65 384 64V448C384 483.3 355.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM48 64V448C48 456.8 55.16 464 64 464H144V400C144 373.5 165.5 352 192 352C218.5 352 240 373.5 240 400V464H320C328.8 464 336 456.8 336 448V64C336 55.16 328.8 48 320 48H64C55.16 48 48 55.16 48 64z"></path>
+                                </svg></div>
+                            <div class="col text-start d-grid flex-row-reverse">
+                                <div class="row">
+                                    <div class="col"><strong class="fs-5 text-start text-body-emphasis d-xl-flex justify-content-xl-start">Nombre empresa</strong></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col"><small class="text-start text-body d-xl-flex justify-content-xl-start">Empresa</small></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>Puntuación</p>
+                                <ul class="list-unstyled text-warning d-inline-flex justify-content-center mb-0">
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col"><button class="btn btn-primary" type="button">Contacto</button></div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xl-7 d-xl-flex align-content-stretch">
+                        <div class="vstack gap-3 border rounded flex-fill">
+                            <div class="card d-block" style="margin: 0px;">
+                                <div class="card-header">
+                                    <h4 class="text-uppercase text-start">Información</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-start card-text">Información de la empresa</p>
+                                </div>
+                            </div>
+                            <div class="card d-block" style="margin: 0;">
+                                <div class="card-header">
+                                    <h4 class="text-uppercase text-start">Rubros</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-start card-text">Información de la empresa</p>
+                                </div>
+                            </div>
+                            <div class="card d-block" style="margin: 0;">
+                                <div class="card-header">
+                                    <h4 class="text-uppercase text-start">Comuna</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-start card-text">Información de la empresa</p>
+                                </div>
+                            </div>
+                            <div class="card d-block" style="margin: 0;">
+                                <div class="card-header">
+                                    <h4 class="text-uppercase text-start">ACTIVIDADES ECONÓMICAS</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-start card-text">SERVICIOS DE FORESTACION OTRAS ACTIVIDADES DE SERVICIOS CONEXAS A LA SILVICULTURA N.C.P. OBRAS DE INGENIERIA OTRAS ACTIVIDADES EMPRESARIALES<br><br>SERVICIOS DE GEOLOGÍA Y MINERÍA, ANÁLISIS DE MINERALES<br><br>MOVIMIENTO DE TIERRA Y ARRIENDO DE MAQUINARIAS<br><br>SERVICIOS A LA MINERA<br><br>SERVICIOS DE INGENIERÍA, CONSTRUCCIÓN Y OBRAS CIVILES<br><br>CAPACITACIONES<br><br>SEGURIDAD INDUSTRIAL<br><br>SERVICIOS INTEGRALES DE SEGURIDAD<br><br>TRANSPORTE<br><br>TRANSPORTE DE MINERALES Y CONCENTRADOS<br><br>MOVIMIENTO DE TIERRA Y ARRIENDO DE MAQUINARIAS</p>
+                                </div>
+                            </div>
+                            <div class="card d-block" style="margin: 0;">
+                                <div class="card-header">
+                                    <h4 class="text-uppercase text-start">REPRESENTANTE LEGAL</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-start card-text">Información de la empresa</p>
+                                </div>
+                            </div>
+                            <div class="card d-block" style="margin: 0px;">
+                                <div class="card-header">
+                                    <h4 class="text-uppercase text-start">Servicios</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-start card-text">Información de la empresa</p>
+                                </div>
+                            </div>
+                            <div class="card d-block" style="margin: 0px;">
+                                <div class="card-header">
+                                    <h4 class="text-uppercase text-start">Proyectos</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-start card-text">Información de la empresa</p>
+                                </div>
+                            </div>
+                            <div class="card d-block" style="margin: 0px;">
+                                <div class="card-header">
+                                    <h4 class="text-uppercase text-start">Certificaciones</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="text-start card-text">Información de la empresa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="lightJumbo" class="col-md-8 p-5 mb-4 bg-light rounded-3" style="width: 100%;font-family: 'Noto Sans Indic Siyaq Numbers', sans-serif;">
+                <div class="container text-center py-5 border rounded-3">
+                    <h1 class="display-4 fw-bold">Comentarios</h1><button class="btn btn-primary" type="button" style="border-radius: 48px;font-size: 26px;background: rgb(28,119,252);font-family: 'Noto Sans Inscriptional Pahlavi', sans-serif;font-weight: bold;width: 187.75px;border-width: 0px;" data-bs-target="#modal-1" data-bs-toggle="modal">Valorar Servicio</button>
+                    <div class="modal fade border rounded" role="dialog" tabindex="-1" id="modal-1" data-bs-theme="dark">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h4 class="modal-title text-primary-emphasis">Deje su comentario y puntuación</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body d-grid"><textarea class="form-control-lg" placeholder="Escriba su testimonio" rows="6" name="areaReview" autofocus="" spellcheck="true" wrap="soft" required="" maxlength="180" data-bs-theme="dark" resize="none"></textarea>
+                                    <div id="contador-palabras"><span id="actual">0</span><span id="maximo">/ 180</span></div><span class="star-rating">
+                      <input type="radio" name="rating1" value="1">
+                      <i></i>
+                      <input type="radio" name="rating1" value="2">
+                      <i></i>
+                      <input type="radio" name="rating1" value="3">
+                      <i></i>
+                      <input type="radio" name="rating1" value="4">
+                      <i></i>
+                      <input type="radio" name="rating1" value="5" data-com.bitwarden.browser.user-edited="yes">
+                      <i></i> </span>
+                                </div>
+                                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cerrar</button><button class="btn btn-primary" type="button">Guardar</button></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="testimonials-clean" style="font-family: 'Noto Sans Indic Siyaq Numbers', sans-serif;">
+                <div class="container">
+                    <div class="intro">
+                        <h2 class="text-center">Testimonios</h2>
+                        <p class="text-center">¡Lea lo que otros opinan de esta empresa!</p>
+                    </div><div id="carouselMultiItemExample" class="text-center carousel slide carousel-dark text-center" data-mdb-ride="carousel" data-mdb-items="1">
+    <div class="d-flex justify-content-center mb-4"><button class="carousel-control-prev position-relative" type="button" data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button><button class="carousel-control-next position-relative" type="button" data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button></div>
+    <div class="carousel-inner py-4">
+        <div class="carousel-item active">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4"><img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar" style="width: 150px;" />
+                        <h5 class="mb-3">Anna Deynah</h5>
+                        <p>UX Designer</p>
+                        <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur. </p>
+                        <ul class="list-unstyled text-warning d-inline-flex justify-content-center mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block"><img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar" style="width: 150px;" />
+                        <h5 class="mb-3">John Doe</h5>
+                        <p>Web Developer</p>
+                        <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi. </p>
+                        <ul class="list-unstyled text-warning d-inline-flex justify-content-center mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star-half-alt fa-sm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block"><img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar" style="width: 150px;" />
+                        <h5 class="mb-3">Maria Kate</h5>
+                        <p>Photographer</p>
+                        <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti. </p>
+                        <ul class="list-unstyled text-warning d-inline-flex justify-content-center mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4"><img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(3).webp" alt="avatar" style="width: 150px;" />
+                        <h5 class="mb-3">John Doe</h5>
+                        <p>UX Designer</p>
+                        <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur. </p>
+                        <ul class="list-unstyled text-warning d-flex justify-content-center mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block"><img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar" style="width: 150px;" />
+                        <h5 class="mb-3">Alex Rey</h5>
+                        <p>Web Developer</p>
+                        <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi. </p>
+                        <ul class="list-unstyled text-warning d-flex justify-content-center mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star-half-alt fa-sm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block"><img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(5).webp" alt="avatar" style="width: 150px;" />
+                        <h5 class="mb-3">Maria Kate</h5>
+                        <p>Photographer</p>
+                        <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti. </p>
+                        <ul class="list-unstyled text-warning d-flex justify-content-center mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4"><img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(6).webp" alt="avatar" style="width: 150px;" />
+                        <h5 class="mb-3">Anna Deynah</h5>
+                        <p>UX Designer</p>
+                        <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur. </p>
+                        <ul class="list-unstyled text-warning d-flex justify-content-center mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block"><img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(8).webp" alt="avatar" style="width: 150px;" />
+                        <h5 class="mb-3">John Doe</h5>
+                        <p>Web Developer</p>
+                        <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi. </p>
+                        <ul class="list-unstyled text-warning d-flex justify-content-center mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star-half-alt fa-sm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block"><img class="rounded-circle shadow-1-strong mb-4" src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(7).webp" alt="avatar" style="width: 150px;" />
+                        <h5 class="mb-3">Maria Kate</h5>
+                        <p>Photographer</p>
+                        <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti. </p>
+                        <ul class="list-unstyled text-warning d-flex justify-content-center mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4"><img class="rounded-circle shadow-1-strong mb-4" src="https://img.freepik.com/free-photo/large-truck-carrying-sand-platinum-mining-site-africa_181624-60189.jpg?w=1060&t=st=1700078584~exp=1700079184~hmac=2a27fabc9ba96ffa95c3912d1d526d1a26dec35c434d5d708000bf9db28e4004" alt="avatar" style="width: 150px;" />
+                        <h5 class="mb-3">Anna Deynah</h5>
+                        <p>Empresa minera 1</p>
+                        <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id officiis hic tenetur quae quaerat ad velit ab hic tenetur. </p>
+                        <ul class="list-unstyled text-warning d-flex justify-content-center mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block"><img class="rounded-circle shadow-1-strong mb-4" src="https://img.freepik.com/free-photo/worker-from-dressed-work-clothes-observing-some-excavators-construction-site-ai-generative_123827-23542.jpg?w=996&t=st=1700078620~exp=1700079220~hmac=0ffc4a5c91fc0c610ddbf223cc5d6ea6ebae0f7cfd3d3678225611181d08990a" alt="avatar" style="width: 150px;" />
+                        <h5 class="mb-3">John Doe</h5>
+                        <p>Empresa minera 2</p>
+                        <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid commodi. </p>
+                        <ul class="list-unstyled text-warning d-flex justify-content-center mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star-half-alt fa-sm"></i></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 d-none d-lg-block"><img class="rounded-circle shadow-1-strong mb-4" src="https://img.freepik.com/free-vector/mining-industry-flat-composition_1284-21021.jpg?w=740&t=st=1700078661~exp=1700079261~hmac=f1bdc30ea6d3325c51d8dc1ebc3ea3975eb3df8a099157e6143c87f04237c388" alt="avatar" style="width: 150px;" />
+                        <h5 class="mb-3">Maria Lopez</h5>
+                        <p>Empresa minera 3</p>
+                        <p class="text-muted"><i class="fas fa-quote-left pe-2"></i> At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti. </p>
+                        <ul class="list-unstyled text-warning d-flex justify-content-center mb-0">
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="fas fa-star fa-sm"></i></li>
+                            <li><i class="far fa-star fa-sm"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </section>
+            <div class="container my-5" style="font-family: 'Noto Sans Indic Siyaq Numbers', sans-serif;"></div>
+        </main>
+        <footer class="footer mt-auto py-3 bg-dark text-white text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1>Footer</h1>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-unstyled">
+                            <li>Conubia posuere odio</li>
+                            <li>Libero nibh dui</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-unstyled">
+                            <li>Euismod luctus laoreet</li>
+                            <li>Ut donec semper.</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-unstyled">
+                            <li>Lorem odio ullamcorper.</li>
+                            <li>Justo consectetur mauris.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <section id="floating-buttons"><a data-bs-toggle="tooltip" data-bss-tooltip="" id="msg-link" class="floatlink" href="chat.html" title="Mensajes"><span class="badge" id="notificacion-msg">5</span><i class="typcn typcn-messages"></i></a><a data-bs-toggle="modal" data-bss-tooltip="" id="conexiones-link" class="floatlink" title="Conexiones" data-bs-target="#modal-conexiones"><span class="badge" id="notificacion-conexion">3</span><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="1em" viewBox="0 0 24 24" width="1em" fill="currentColor">
+                <rect fill="none" height="24" width="24"></rect>
+                <path d="M11,14H9c0-4.97,4.03-9,9-9v2C14.13,7,11,10.13,11,14z M18,11V9c-2.76,0-5,2.24-5,5h2C15,12.34,16.34,11,18,11z M7,4 c0-1.11-0.89-2-2-2S3,2.89,3,4s0.89,2,2,2S7,5.11,7,4z M11.45,4.5h-2C9.21,5.92,7.99,7,6.5,7h-3C2.67,7,2,7.67,2,8.5V11h6V8.74 C9.86,8.15,11.25,6.51,11.45,4.5z M19,17c1.11,0,2-0.89,2-2s-0.89-2-2-2s-2,0.89-2,2S17.89,17,19,17z M20.5,18h-3 c-1.49,0-2.71-1.08-2.95-2.5h-2c0.2,2.01,1.59,3.65,3.45,4.24V22h6v-2.5C22,18.67,21.33,18,20.5,18z"></path>
+            </svg></a>
+        <div class="modal fade" role="dialog" tabindex="-1" id="modal-conexiones">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Conexiones</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="border rounded accordion mb-2">
+                            <div class="shadow accordion__item open-accordion">
+                                <div class="accordion__header"><span>Pendientes</span></div>
+                                <div class="accordion__body">
+                                    <div class="card-group card-proveedor" id="pendientes">
+                                        <div class="card pendiente" id="minera-1"><img class="card-img-top w-100 d-block card-img-top w-100" id="conexion-img" src="assets/img/Minera_Los_Pelambres,_Salamanca,_Chile_-_panoramio_(1).jpg">
+                                            <div class="card-body"><a href="#"><h4>Nombre minera</h4></a>
+                                                <p class="card-text">Mensaje que dejó la minera/proveedor al contactar a este proveedor</p>
+                                                <div class="btn-group" role="group"><button class="btn btn-primary conexion-aceptar" type="button">Aceptar</button><button class="btn btn-danger conexion-rechazar" type="button">Rechazar</button></div>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="minera-2"><img class="card-img-top w-100 d-block card-img-top w-100" id="conexion-img">
+                                            <div class="card-body"><a href="#"><h4>Nombre empresa</h4></a>
+                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                                <div class="btn-group" role="group"><button class="btn btn-primary conexion-aceptar" type="button">Aceptar</button><button class="btn btn-danger conexion-rechazar" type="button">Rechazar</button></div>
+                                            </div>
+                                        </div>
+                                        <div class="card" id="minera-3"><img class="card-img-top w-100 d-block card-img-top w-100" id="conexion-img">
+                                            <div class="card-body"><a href="#"><h4>Nombre minera</h4></a>
+                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                                <div class="btn-group" role="group"><button class="btn btn-primary conexion-aceptar" type="button">Aceptar</button><button class="btn btn-danger conexion-rechazar" type="button">Rechazar</button></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shadow accordion__item">
+                                <div class="accordion__header"><span>Aceptadas ✅</span></div>
+                                <div class="accordion__body">
+                                    <div class="card-group card-proveedor" id="aceptadas">
+                                        <div class="card aceptada"><img class="card-img-top w-100 d-block card-img-top w-100" src="assets/img/sample%20mountian.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Nombre minera</h4>
+                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-link" type="button">Ir a la conversación<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewbox="0 0 20 20" fill="none"><path d="M11 3C10.4477 3 10 3.44772 10 4C10 4.55228 10.4477 5 11 5H13.5858L7.29289 11.2929C6.90237 11.6834 6.90237 12.3166 7.29289 12.7071C7.68342 13.0976 8.31658 13.0976 8.70711 12.7071L15 6.41421V9C15 9.55228 15.4477 10 16 10C16.5523 10 17 9.55228 17 9V4C17 3.44772 16.5523 3 16 3H11Z" fill="currentColor"></path><path d="M5 5C3.89543 5 3 5.89543 3 7V15C3 16.1046 3.89543 17 5 17H13C14.1046 17 15 16.1046 15 15V12C15 11.4477 14.5523 11 14 11C13.4477 11 13 11.4477 13 12V15H5V7L8 7C8.55228 7 9 6.55228 9 6C9 5.44772 8.55228 5 8 5H5Z" fill="currentColor"></path></svg></button><button class="btn btn-link remove" type="button">Remover<i class="far fa-trash-alt"></i></button>
+                                            </div>
+                                        </div>
+                                        <div class="card aceptada"><img class="card-img-top w-100 d-block card-img-top w-100">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Nombre minera</h4>
+                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-link" type="button">Ir a la conversación</button>
+                                            </div>
+                                        </div>
+                                        <div class="card aceptada"><img class="card-img-top w-100 d-block card-img-top w-100">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Nombre minera</h4>
+                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-link" type="button">Ir a la conversación</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="shadow accordion__item">
+                                <div class="accordion__header"><span>Rechazadas ❌</span></div>
+                                <div class="accordion__body">
+                                    <div class="card-group card-proveedor" id="rechazadas">
+                                        <div class="card rechazada"><img class="card-img-top w-100 d-block" src="assets/img/sample%20mountian.jpg">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Nombre minera</h4>
+                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-link" type="button">Ir a la conversación</button>
+                                            </div>
+                                        </div>
+                                        <div class="card rechazada"><img class="card-img-top w-100 d-block">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Nombre minera</h4>
+                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-link" type="button">Ir a la conversación</button>
+                                            </div>
+                                        </div>
+                                        <div class="card"><img class="card-img-top w-100 d-block">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Nombre minera</h4>
+                                                <p class="card-text">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p><button class="btn btn-link" type="button">Ir a la conversación</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cerrar</button></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/chat/trato.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/9b8a7e18a0.js"></script>
+    <script src="assets/js/proveedor/Accordion-with-custom-design-accordion.js"></script>
+    <script src="assets/js/proveedor/carousel.js"></script>
+    <script src="assets/js/proveedor/chat.js"></script>
+    <script src="assets/js/proveedor/conectar.js"></script>
+    <script src="assets/js/proveedor/contador-palabras.js"></script>
+</body>
+
+</html>
