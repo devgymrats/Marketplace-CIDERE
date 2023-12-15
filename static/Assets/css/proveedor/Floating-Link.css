@@ -1,0 +1,50 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.floatlink:hover {
+  color: #9f9f9f;
+}
+
+.floatlink {
+  box-shadow: 1px 1px 0px 1px #2f8cc1, -1px -1px 0px 1px #2fdede;
+  width: 39px;
+  height: 37px;
+  bottom: 2px;
+  color: #ffffff;
+  font-size: 1.7em;
+  text-align: center;
+  background-color: rgba(19,20,25,0.6);
+  border-radius: 10px;
+  position: fixed;
+}
+
+#msg-link {
+  right: 57px;
+  margin-bottom: 16px;
+}
+
+#conexiones-link {
+  right: 105px;
+  margin-bottom: 16px;
+}
+
+.floatlink .badge {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  padding: 3px 8px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+}
+
+.card-proveedor {
+  text-align: center;
+  display: grid;
+}
+
+.card-proveedor .card-img-top {
+  height: 100px;
+}
+
