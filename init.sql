@@ -27,6 +27,11 @@ INSERT INTO noticias(titulo, noticia, fecha, imagen) VALUES ('Alianza Histórica
 
 CREATE TYPE tipo_usuarios AS ENUM ('administrador', 'minera', 'proveedor');
 
+CREATE TABLE mensajes(
+    id SERIAL NOT NULL,
+    usuario VARCHAR(50),
+    mensaje TEXT
+); 
 
 
 CREATE TABLE usuarios(
@@ -73,5 +78,19 @@ CREATE TABLE credenciales (
 );
 
 
-INSER INTO credenciales(rut, contraseña) VALUES(123456789, "123");
+INSERT INTO credenciales(rut, contraseña) VALUES (123456789, '123');
+
+
+CREATE TABLE preguntas_respuestas(
+    id SERIAL NOT NULL,
+    pregunta TEXT,
+    respuesta TEXT
+);
+
+INSERT INTO preguntas_respuestas(pregunta,respuesta) VALUES ('¿Qué es CIDERE?','CIDERE es una corporación dedicada a promover y facilitar la colaboración entre empresas mineras en la región de Coquimbo, Chile. Nos enfocamos en crear un espacio industrial minero donde las empresas pueden encontrar proveedores y servicios de manera eficiente.');
+INSERT INTO preguntas_respuestas(pregunta,respuesta) VALUES ('¿Cómo puedo utilizar el Espacio Industrial Minero de CIDERE?','Para utilizar nuestro espacio, simplemente visita la página principal y utiliza el buscador. Ingresa el tipo de proveedor o servicio que necesitas, y nuestro sistema te conectará con empresas mineras de la región.');
+INSERT INTO preguntas_respuestas(pregunta,respuesta) VALUES ('¿Es gratuito utilizar el servicio de búsqueda en CIDERE?','Sí, el servicio de búsqueda en el Espacio Industrial Minero de CIDERE es completamente gratuito. Queremos facilitar la conexión entre empresas mineras y proveedores en la región.');
+INSERT INTO preguntas_respuestas(pregunta,respuesta) VALUES ('¿Cómo puedo registrarme como proveedor en CIDERE?','Si eres un proveedor que desea ser parte de nuestro espacio, puedes registrarte en el botón "Registrarse" en la esquina superior derecha de nuestra página, o también contáctanos a través de la sección de contacto. Estaremos encantados de discutir las oportunidades de colaboración.');
+INSERT INTO preguntas_respuestas(pregunta,respuesta) VALUES ('¿Qué tipo de empresas puedo encontrar en el Espacio Industrial Minero?','En nuestro espacio, puedes encontrar una amplia variedad de empresas mineras y proveedores de servicios relacionados. Desde servicios de maquinaria hasta consultoría especializada, nuestro objetivo es abarcar todas las necesidades de la industria minera en Coquimbo.');
+
 
