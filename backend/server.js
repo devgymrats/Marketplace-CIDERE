@@ -20,6 +20,7 @@ app.use(flash());
 app.use((req, res, next) => {
   res.header('Access-Control-Allow-Origin', '*');
   res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  res.header('Access-Control-Allow-Methods', '*');
   next();
 });
 
@@ -79,6 +80,7 @@ app.get('/noticias',(req,res) =>{
     } else {
       // Los resultados de la consulta están en la propiedad 'rows'
       const noticias = result.rows;
+      
       console.log('Consulta de noticias exitosa en PostgreSQL');
       res.status(200).json({ noticias: noticias });
     }
@@ -122,6 +124,26 @@ app.post('/noticia', async(req,res) =>{
     console.error('Error en la inserccion de noticia a la base de datos:', error);
     res.status(500).json({ error: 'Error al insertar la noticia el servidor' });
   }
+});
+
+app.put('/noticia/:id', async(req,res) =>{
+
+  const idNoticia= req.params.id;
+  
+  const {titulo, noticia} = req.body;
+  if (!titulo || !noticia|| titulo.trim() === '' || noticia.trim() === '') {
+    return res.status(400).json({ error: 'Titulo y noticia son campos obligatorios.' });
+  }
+  try {
+  
+    const result = await pool.query("UPDATE noticias SET titulo = $1, noticia =$2 WHERE id = $3",[titulo, noticia,idNoticia]);
+    res.status(200).json({ message: 'Noticia actualizada correctamente.'});
+
+  } catch (error) {
+    console.error('La pregunta no se puede editar o no existe', error);
+    res.status(500).json({ error: 'La pregunta no se puede editar o no existe' });
+  }
+ 
 });
 
 //Lista de mineras
@@ -211,6 +233,157 @@ app.get('/preguntas', async(req,res) =>{
   }
 });
 
+
+
+
+
+app.post('/chat/sendmessage', async(req,res) =>{
+
+  const {usuario,mensaje} = req.body;
+
+   // Query de inserción
+   const query = 'INSERT INTO mensajes (usuario, mensaje) VALUES ($1, $2) RETURNING *';
+
+   try {
+     const result = await pool.query(query, [usuario, mensaje]);
+ 
+     res.json({
+       success: true,
+       message: 'Inserción exitosa',
+       data: result.rows[0], // Devuelve la fila insertada
+     });
+
+   } catch (error) {
+     console.error('Error al insertar en PostgreSQL', error);
+     res.status(500).json({
+       success: false,
+       message: 'Error al insertar en PostgreSQL',
+       error: error.message,
+     })
+    }
+ 
+});
+
+app.get('/chat/getmessages', async(req,res) =>{
+
+  try {
+  
+    const result = await pool.query('SELECT * FROM mensajes');
+    const mensajes = result.rows;
+    res.status(201).json({mensajes: mensajes });
+
+  } catch (error) {
+    console.error('Error en leer mensajes:', error);
+    res.status(500).json({ error: 'Error en leer mensajes' });
+  }
+ 
+});
+
+
+
+app.get('/FAQ', async(req,res) =>{
+
+  try {
+  
+    const result = await pool.query('SELECT * FROM preguntas_respuestas');
+    const FAQ = result.rows;
+    res.status(201).json({FAQ: FAQ });
+
+  } catch (error) {
+    console.error('Error en leer las preguntas/respuestas:', error);
+    res.status(500).json({ error: 'Error en leer preguntas/respuestas' });
+  }
+ 
+});
+
+
+app.get('/FAQ/:id', async(req,res) =>{
+
+  const idPregunta= req.params.id;
+
+  try {
+  
+    const result = await pool.query("SELECT * FROM preguntas_respuestas WHERE id = $1", [idPregunta]);
+    const FAQ = result.rows;
+    res.status(201).json({FAQ: FAQ });
+
+  } catch (error) {
+    console.error('La pregunta no existe', error);
+    res.status(500).json({ error: 'La pregunta no existe' });
+  }
+ 
+});
+
+
+app.put('/FAQ/:id', async(req,res) =>{
+
+  const idPregunta= req.params.id;
+  
+  const { pregunta, respuesta} = req.body;
+  if (!pregunta || !respuesta || pregunta.trim() === '' || respuesta.trim() === '') {
+    return res.status(400).json({ error: 'Pregunta y respuesta son campos obligatorios.' });
+  }
+  try {
+  
+    const result = await pool.query("UPDATE preguntas_respuestas SET pregunta = $1, respuesta =$2 WHERE id = $3",[pregunta,respuesta,idPregunta]);
+    res.status(200).json({ message: 'Registro actualizado correctamente.'});
+
+  } catch (error) {
+    console.error('La pregunta no se puede editar o no existe', error);
+    res.status(500).json({ error: 'La pregunta no se puede editar o no existe' });
+  }
+ 
+});
+
+
+
+
+app.post('/FAQ', async(req,res) =>{
+
+  const {pregunta,respuesta} = req.body;
+
+   // Query de inserción
+   const query = 'INSERT INTO preguntas_respuestas(pregunta,respuesta) VALUES ($1, $2) RETURNING *';
+
+   try {
+     const result = await pool.query(query, [pregunta,respuesta]);
+ 
+     res.json({
+       success: true,
+       message: 'Inserción de la pregunta exitosa',// Devuelve la fila insertada
+     });
+
+   } catch (error) {
+     console.error('Error al insertar la pregunta en PostgreSQL', error);
+     res.status(500).json({
+       success: false,
+       message: 'Error al insertar la pregunta',
+       error: error.message,
+     })
+    }
+
+  });
+
+app.delete('/FAQ/:id', async(req,res)=>{
+
+
+    const idPregunta= req.params.id;
+   
+    try {
+      const result = await pool.query('DELETE FROM preguntas_respuestas WHERE id = $1', [idPregunta]);
+      
+  
+      if (res) {
+        res.status(201).json({ mensaje: 'Pregunta borrada' });
+      } else {
+        res.status(404).json({ error: 'Pregunta no encontrada' });
+      }
+    } catch (error) {
+      console.error('Error en la consulta de pregunta a la base de datos:', error);
+      res.status(500).json({ error: 'Error en el servidor' });
+    }
+  });
+ 
 
 
 const port = process.env.PORT || 5000;
