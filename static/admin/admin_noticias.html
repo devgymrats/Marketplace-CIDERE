@@ -41,8 +41,8 @@
                     </li>
                     <li class="nav-item d-flex justify-content-center align-items-center">
                         <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle active" aria-expanded="false" data-bs-toggle="dropdown" href="#">&nbsp;<img class="rounded-circle" src="../assets/img/boy.jpg" style="width: 40px;border-width: 2px;border-style: solid;"></a>
-                            <div class="dropdown-menu dropdown-menu-end text-start shadow" style="margin-top: 16px;"><a class="dropdown-item" href="#">Pengaturan</a><a class="dropdown-item" href="#">Log Aktivitas</a><a class="dropdown-item" href="#">Pelanggaran</a>
-                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Keluar</a>
+                            <div class="dropdown-menu dropdown-menu-end text-start shadow" style="margin-top: 16px;"><a class="dropdown-item" href="#">Perfil</a><a class="dropdown-item" href="#">Actividad</a><a class="dropdown-item" href="#">Configuración</a>
+                                <div class="dropdown-divider"></div><a class="dropdown-item" href="#">Cerrar Sesión</a>
                             </div>
                         </div>
                     </li>
@@ -106,11 +106,11 @@
                                     <h5 class="display-6 text-nowrap text-capitalize mb-0">Noticias</h5>
                                     <div class="input-group input-group-sm w-auto"><input class="form-control form-control-sm" type="text" placeholder="Buscar..."><button class="btn btn-outline-primary btn-sm" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search mb-1">
                                                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path>
-                                            </svg></button><button class="btn btn-primary" type="button" data-bs-target="#modal-1" data-bs-toggle="modal" style="margin-left: 8px;">Agregar</button></div>
+                                            </svg></button><button class="btn btn-primary btn-agregar-noticia" type="button" data-bs-target="#modal-1" data-bs-toggle="modal" style="margin-left: 8px;">Agregar</button></div>
                                 </div>
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table class="table table-striped table-hover">
+                                        <table class="table table-striped table-hover" id="noticias-table">
                                             <thead>
                                                 <tr>
                                                     <th>ID</th>
@@ -121,34 +121,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td class="text-truncate">1</td>
-                                                    <td class="text-truncate">Alianza Histórica entre Empresas Mineras y Comunidades Locales en Coquimbo</td>
-                                                    <td class="text-truncate">En un esfuerzo por fortalecer los lazos entre la industria minera y las comunidades locales, varias empresas mineras líderes en Coquimbo han formado una alianza estratégica. Esta iniciativa busca promover la responsabilidad social empresarial y el desarrollo sostenible en la región. Se planean proyectos conjuntos que beneficiarán tanto a las empresas como a las comunidades, marcando un hito en la colaboración entre el sector minero y la sociedad.</td>
-                                                    <td><img src="../assets/img/noticias/Perfil%201.jpg"></td>
-                                                    <td align="center"><button class="btn btn-success btn-default" data-bs-toggle="modal" data-bss-tooltip="" title="Editar" type="button" data-bs-target="#modal-1"><i class="far fa-edit" title="Editar"></i></button><a class="btn btn-warning" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Ver"><i class="far fa-eye" title="Eliminar"></i></a><a class="btn btn-danger" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Eliminar"><i class="far fa-trash-alt" title="Eliminar"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate">2</td>
-                                                    <td class="text-truncate">Alianza Histórica entre Empresas Mineras y Comunidades Locales en Coquimbo</td>
-                                                    <td class="text-truncate">En un esfuerzo por fortalecer los lazos entre la industria minera y las comunidades locales, varias empresas mineras líderes en Coquimbo han formado una alianza estratégica. Esta iniciativa busca promover la responsabilidad social empresarial y el desarrollo sostenible en la región. Se planean proyectos conjuntos que beneficiarán tanto a las empresas como a las comunidades, marcando un hito en la colaboración entre el sector minero y la sociedad.</td>
-                                                    <td><img src="../assets/img/noticias/perfil%202.jpg"></td>
-                                                    <td align="center"><a class="btn btn-success btn-default" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Editar"><i class="far fa-edit" title="Editar"></i></a><a class="btn btn-warning" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Ver"><i class="far fa-eye" title="Eliminar"></i></a><a class="btn btn-danger" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Eliminar"><i class="far fa-trash-alt" title="Eliminar"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate">3</td>
-                                                    <td class="text-truncate">Alianza Histórica entre Empresas Mineras y Comunidades Locales en Coquimbo</td>
-                                                    <td class="text-truncate">En un esfuerzo por fortalecer los lazos entre la industria minera y las comunidades locales, varias empresas mineras líderes en Coquimbo han formado una alianza estratégica. Esta iniciativa busca promover la responsabilidad social empresarial y el desarrollo sostenible en la región. Se planean proyectos conjuntos que beneficiarán tanto a las empresas como a las comunidades, marcando un hito en la colaboración entre el sector minero y la sociedad.</td>
-                                                    <td><img src="../assets/img/noticias/perfil%203.jpg"></td>
-                                                    <td align="center"><a class="btn btn-success btn-default" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Editar"><i class="far fa-edit" title="Editar"></i></a><a class="btn btn-warning" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Ver"><i class="far fa-eye" title="Eliminar"></i></a><a class="btn btn-danger" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Eliminar"><i class="far fa-trash-alt" title="Eliminar"></i></a></td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-truncate">4</td>
-                                                    <td class="text-truncate">Alianza Histórica entre Empresas Mineras y Comunidades Locales en Coquimbo</td>
-                                                    <td class="text-truncate">En un esfuerzo por fortalecer los lazos entre la industria minera y las comunidades locales, varias empresas mineras líderes en Coquimbo han formado una alianza estratégica. Esta iniciativa busca promover la responsabilidad social empresarial y el desarrollo sostenible en la región. Se planean proyectos conjuntos que beneficiarán tanto a las empresas como a las comunidades, marcando un hito en la colaboración entre el sector minero y la sociedad.</td>
-                                                    <td><img src="../assets/img/noticias/perfil%204.jpg"></td>
-                                                    <td align="center"><a class="btn btn-success btn-default" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Editar"><i class="far fa-edit" title="Editar"></i></a><a class="btn btn-warning" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Ver"><i class="far fa-eye" title="Eliminar"></i></a><a class="btn btn-danger" role="button" data-bs-toggle="tooltip" data-bss-tooltip="" title="Eliminar"><i class="far fa-trash-alt" title="Eliminar"></i></a></td>
-                                                </tr>
+                                                <!-- rellenar -->
                                             </tbody>
                                         </table>
                                     </div>
@@ -158,8 +131,8 @@
                                         <ul class="pagination pagination-sm mb-0 justify-content-center">
                                             <li class="page-item"><a class="page-link" aria-label="Previous" href="#"><span aria-hidden="true">«</span></a></li>
                                             <li class="page-item"><a class="page-link" href="#">1</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <!-- <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li> -->
                                             <li class="page-item"><a class="page-link" aria-label="Next" href="#"><span aria-hidden="true">»</span></a></li>
                                         </ul>
                                     </nav>
@@ -168,16 +141,27 @@
                         </div>
                     </div>
                     <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
-                        <div class="modal-dialog" role="document">
+                        <div class="modal-dialog modal-lg" role="document">
                             <div class="modal-content">
                                 <div class="modal-header">
                                     <h4 class="modal-title">Editar noticia</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                                 </div>
                                 <div class="modal-body">
-                                    <p>Título de la noticia</p><input class="form-control-lg" type="text" name="titulo-noticia" placeholder="Escriba el título..." required="" maxlength="75">
-                                    <p>Imagen</p>
-                                    <div class="files color form-group mb-3"><input class="form-control-sm" type="file" multiple="" name="files"></div>
-                                    <p>Cuerpo de la noticia</p><textarea class="form-control-lg" name="cuerpo-noticia" placeholder="Escriba la noticia..." rows="5" cols="35" required=""></textarea>
+                                    <div class="inputGroup">
+                                        <input class="data-titulo-modal" type="text" required="true" autocomplete="off" type="text" name="titulo-noticia" maxlength="75">
+                                        <label for="name">Título de la noticia</label>
+                                    </div>
+                                    
+                                    <div class="inputGroup">
+                                        <textarea class="data-noticia-modal" name="cuerpo-noticia" rows="5" cols="35" required="" autocomplete="off"></textarea>
+                                        <label for="name">Noticia</label>
+                                    </div>
+                                    
+                                    <div class="files color form-group mb-3">
+                                        <p style="text-align: center;">Imagen</p>
+                                        <input class="form-control-sm subir" type="file" accept=".jpg, .jpeg, .png" name="files" style="padding-top: 28px;">
+                                    </div>
+                                    
                                 </div>
                                 <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cerrar sin guardar</button><button class="btn btn-primary" type="button">Guardar</button></div>
                             </div>
@@ -193,6 +177,7 @@
     <script src="../assets/js/chat/trato.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://kit.fontawesome.com/9b8a7e18a0.js"></script>
+    <script src="../assets/js/admin/recuperarNoticias.js"></script>
 </body>
 
 </html>
