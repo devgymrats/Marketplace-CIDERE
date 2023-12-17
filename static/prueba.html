@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <style>
+        /* Estilos básicos para la presentación */
+        .chat-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .chat-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .chat-title {
+            margin-bottom: 10px;
+        }
+
+        .chat-content {
+            display: none;
+            border: 1px solid #ccc;
+            padding: 10px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Lista de chats -->
+    <ul class="chat-container">
+        <li><button onclick="openChat(1)">CMP</button></li>
+        <li><button onclick="openChat(2)">LOS PELAMBRES</button></li>
+        <li><button onclick="openChat(3)">TECK</button></li>
+        <!-- Puedes agregar más botones según sea necesario -->
+    </ul>
+
+    <!-- Sección de chat -->
+    <div id="chat-section">
+        <h2 id="chat-title" class="chat-title">Chat con <span id="chat-user"></span></h2>
+        <div id="chat" class="chat-content"></div>
+    </div>
+
+    <script>
+        const chats = [
+            { id: 1, name: 'CMP', messages: [] },
+            { id: 2, name: 'LOS PELAMBRES', messages: [] },
+            { id: 3, name: 'TECK', messages: [] }
+            // ... Agrega más chats según sea necesario
+        ];
+
+        function openChat(chatId) {
+            const selectedChat = chats.find(chat => chat.id === chatId);
+            const chatUserElement = document.getElementById('chat-user');
+            const chatContentElement = document.getElementById('chat');
+            const chatTitleElement = document.getElementById('chat-title');
+
+            chatUserElement.textContent = selectedChat.name;
+
+            chatContentElement.innerHTML = '';
+
+            const chatHistory = document.createElement('ul');
+            chatHistory.classList.add('list-unstyled');
+
+            selectedChat.messages.forEach(message => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${message.sender}: ${message.text}`;
+                chatHistory.appendChild(listItem);
+            });
+
+            chatContentElement.appendChild(chatHistory);
+
+            chatTitleElement.style.display = 'block';
+            chatContentElement.style.display = 'block';
+        }
+    </script>
+</body>
+</html>

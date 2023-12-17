@@ -25,6 +25,7 @@
     "express-flash": "^0.0.2",
     "express-session": "^1.17.3",
     "nodemon": "^3.0.1",
-    "pg": "^8.11.3"
+    "pg": "^8.11.3",
+    "socket.io": "^4.7.2"
   }
 }

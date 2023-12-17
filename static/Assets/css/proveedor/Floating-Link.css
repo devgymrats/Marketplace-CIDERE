@@ -24,6 +24,15 @@ html {
   margin-bottom: 16px;
 }
 
+#admin-estado {
+  right: 57px;
+  margin-bottom: 70px;
+}
+
+#admin-estado {
+  color: red;
+}
+
 #conexiones-link {
   right: 105px;
   margin-bottom: 16px;

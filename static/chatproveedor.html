@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="es-419">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>CIDERE módulo 3</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+Indic+Siyaq+Numbers&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/chat/botones.css">
+    <link rel="stylesheet" href="assets/css/chat/Chat.css">
+    <link rel="stylesheet" href="assets/css/gradient-navbar.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+</head>
+
+<body>
+
+    <script src="Assets/js/chat/enviarMensaje.js" ></script>
+    <script src="Assets/js/getDate.js"></script>
+
+
+
+
+    <nav class="navbar navbar-expand-md bg-body navbar-dark" id="app-navbar" style="padding-bottom: 0px;padding-top: 0px;">
+        <div class="container-fluid"><a class="navbar-brand" href="#"><img src="assets/img/logo%20EIM%20shadowed.png" width="126" height="54"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Proveedores</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link active" id="openModal" data-bs-target="#modal-faq" data-bs-toggle="modal" href="#">Preguntas Frecuentes</a></li>
+                </ul>
+                <div class="modal fade" role="dialog" tabindex="-1" id="modal-faq">
+                    <div class="modal-dialog modal-lg" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h2 class="text-center text-success modal-title" style="padding-top: 15px;padding-bottom: 15px;color: #1b6ce5!important;">Preguntas Frecuentes</h2><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-md-6 col-lg-11 offset-md-3 offset-lg-0">
+                                        <div id="faqlist" class="accordion accordion-flush">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-1">¿Qué es CIDERE?</button></h2>
+                                                <div id="content-accordion-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                                    <p class="accordion-body"> CIDERE es una corporación dedicada a promover y facilitar la colaboración entre empresas mineras en la región de Coquimbo, Chile. Nos enfocamos en crear un espacio industrial minero donde las empresas pueden encontrar proveedores y servicios de manera eficiente.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-2">¿Cómo puedo utilizar el Espacio Industrial Minero de CIDERE?</button></h2>
+                                                <div id="content-accordion-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                                    <p class="accordion-body"> Para utilizar nuestro espacio, simplemente visita la página principal y utiliza el buscador. Ingresa el tipo de proveedor o servicio que necesitas, y nuestro sistema te conectará con empresas mineras de la región.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-3">¿Es gratuito utilizar el servicio de búsqueda en CIDERE?</button></h2>
+                                                <div id="content-accordion-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                                    <p class="accordion-body"> Sí, el servicio de búsqueda en el Espacio Industrial Minero de CIDERE es completamente gratuito. Queremos facilitar la conexión entre empresas mineras y proveedores en la región.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-4">¿Cómo puedo registrarme como proveedor en CIDERE?</button></h2>
+                                                <div id="content-accordion-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                                    <p class="accordion-body"> Si eres un proveedor que desea ser parte de nuestro espacio, puedes registrarte en el botón "Registrarse" en la esquina superior derecha de nuestra página, o también contáctanos a través de la sección de contacto. Estaremos encantados de discutir las oportunidades de colaboración.</p>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header"><button class="btn accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#content-accordion-5">¿Qué tipo de empresas puedo encontrar en el Espacio Industrial Minero?</button></h2>
+                                                <div id="content-accordion-5" class="accordion-collapse collapse" data-bs-parent="#faqlist">
+                                                    <p class="accordion-body"> En nuestro espacio, puedes encontrar una amplia variedad de empresas mineras y proveedores de servicios relacionados. Desde servicios de maquinaria hasta consultoría especializada, nuestro objetivo es abarcar todas las necesidades de la industria minera en Coquimbo.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cerrar</button></div>
+                        </div>
+                    </div>
+                </div>
+                <p class="ms-auto navbar-text actions" style="text-align: right;"><a class="active login" href="login.html" style="color: rgba(255,255,255,0.91);">Acceder</a> <a class="btn btn-light action-button" role="button" href="signup.html" style="color: rgba(0,0,0,0.9);background: rgba(255,214,0,0.97);border-radius: 10px;border-style: solid;border-color: rgba(0,0,0,0.9);font-size: 16px;padding: 5px 8px;">Registrarse</a></p>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-xl-4">
+                <div class="row">
+                    <div class="col d-flex flex-nowrap justify-content-md-center align-items-md-center justify-content-lg-center align-items-lg-center justify-content-xl-center align-items-xl-center py-2" style="background: rgba(52,58,64,0.2);height: 4rem;">
+                        <h5 class="mr-auto my-auto">Proveedor 1</h5><button class="btn shadow-none border-0 my-auto" type="button" style="width: 2.5rem;height: 2.5rem;"><i class="far fa-comment-alt"></i></button>
+                    </div>
+                </div>
+                <div class="row px-3 py-2">
+                    <div class="col chat-buscar">
+                        <form class="d-flex align-items-center px-2"><i class="fas fa-search fa-lg"></i><input class="shadow-none form-control flex-shrink-1" type="search" placeholder="Buscar un chat" style="border-radius: 13px;border-style: none;"></form>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col chat-box">
+                        <ul class="list-unstyled">
+                            <li style="cursor:pointer;">
+                                <div class="card border-0">
+                                    <div class="card-body"><span class="text-nowrap text-truncate text-uppercase text-white float-end p-1 text-center" style="width: 2rem;height: 2rem;border-radius: 15px;background: #00db5f;">1</span>
+                                        <h4 class="text-nowrap text-truncate card-title">DELMAX LTDA</h4>
+                                        <!-- <h6 class="text-nowrap text-truncate text-muted card-subtitle mb-2" style="font-size: .7rem;">19 de Noviembre de 2023, 11:53 AM</h6> -->
+                                        <!-- <h6 class="text-nowrap text-truncate text-muted card-subtitle mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit sit amet dolor eu dignissim.</h6> -->
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <div class="card border-0">
+                                    <div class="card-body"><span class="text-nowrap text-truncate text-uppercase text-white float-end p-1 text-center" style="width: 2rem;height: 2rem;border-radius: 15px;background: #00db5f;">1</span>
+                                        <h4 class="text-nowrap text-truncate card-title">SOMOS NODOS SPA</h4>
+                                        <!-- <h6 class="text-nowrap text-truncate text-muted card-subtitle mb-2" style="font-size: .7rem;">8 de Diciembre de 2023, 12:01 AM</h6> -->
+                                        <!-- <h6 class="text-nowrap text-truncate text-muted card-subtitle mb-2">Boke, GB, Boke!</h6> -->
+                                    </div>
+                                </div>
+                            </li>
+                            <li style="cursor:pointer;">
+                                <div id="TECK" class="card border-0">
+                                    <div class="card-body"><span class="text-nowrap text-truncate text-uppercase text-white float-end p-1 text-center" style="width: 2rem;height: 2rem;border-radius: 15px;background: #00db5f;">10</span>
+                                        <h4 class="text-nowrap text-truncate card-title">LABORATORIO AGS</h4>
+                                        <!-- <h6 class="text-nowrap text-truncate text-muted card-subtitle mb-2" style="font-size: .7rem;">1 de Julio de 2023, 11:53 AM</h6> -->
+                                        <!-- <h6 class="text-nowrap text-truncate text-muted card-subtitle mb-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse blandit sit amet dolor eu dignissim.</h6> -->
+                                    </div>
+                                </div>
+                            </li>
+                            
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            
+        
+            
+            <div class="col d-none d-sm-none d-md-none d-lg-block d-xl-block" id="chat-section">
+                <div class="row">
+                    <div class="col d-flex align-items-lg-center align-items-xl-center border-start border-muted" style="background: rgba(52,58,64,0.2);height: rem;"><button class="btn d-block d-sm-block d-md-block d-lg-none d-xl-none border-0 my-auto" type="button" style="width: 2.5rem;height: 2.5rem;"><i class="far fa-arrow-alt-circle-left"></i></button>
+                        <h5 class="mr-auto my-auto">Minera 1</h5><span class="my-auto"><i class="fas fa-info-circle"></i></span>
+                        <div class="m-auto buttons"><button class="trato-cerrar" type="button">Cerrar trato</button><button class="trato-denegar" type="button">Denegar</button></div>
+                    </div>
+                </div>
+                <div class="row px-3 py-2 border-start border-muted" style="height: 12cm;">
+                    <div class="col" style="overflow-x: none;overflow-y: auto;max-height: 30.5rem;height: auto;">
+                        <ul id="chat" class="list-unstyled">
+                            <!-- <li class="my-2">
+                                <div class="card border border-muted" style="width: 65%;border-top-left-radius: 0px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;background: rgba(52,58,64,0.05);">
+                                    <div class="card-body text-center p-2">
+                                        <p class="text-start card-text" style="font-size: 1rem;">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <h6 class="text-muted card-subtitle text-end" style="font-size: .75rem;">Julio 22, 2021. 12:33 P.M.</h6>
+                                    </div>
+                                </div>
+                            </li> -->
+<!-- d-flex justify-content-end -->
+                            <!-- <li class=" d-flex justify-content-end my-2">
+                                <div class="card border border-muted" style="width: 65%;border-top-left-radius: 0px;border-top-right-radius: 20px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;background: rgba(52,58,64,0.05);">
+                                    <div class="card-body text-center p-2">
+                                        <p class="text-start card-text" style="font-size: 1rem;">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <h6 class="text-muted card-subtitle text-end" style="font-size: .75rem;">Julio 22, 2021. 12:33 P.M.</h6>
+                                    </div>
+                                </div>
+                            </li> -->
+
+                            
+                            <!-- <li class="d-flex justify-content-end my-2">
+                                <div class="card border border-muted" style="width: 65%;border-top-left-radius: 20px;border-top-right-radius: 0px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;background: rgba(52,58,64,0.05);">
+                                    <div class="card-body text-center p-2"><img class="img-fluid mb-2" src="assets/img/333580.jpg" style="max-height: 30rem;height: auto;min-height: 10rem;">
+                                        <p class="text-start card-text" style="font-size: 1rem;">Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.</p>
+                                        <h6 class="text-muted card-subtitle text-end" style="font-size: .75rem;">Julio 22, 2021. 12:33 P.M.</h6>
+                                    </div>
+                                </div>
+                            </li> -->
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="row px-3 py-2" style="background: rgba(52, 58, 64, 0.46);position: sticky;bottom: 0;">
+                    <div class="col-9 col-sm-10 col-md-10 col-lg-10 col-xl-10" style="padding: 0; overflow: hidden;">
+                        <textarea id="messageInput" class="h-100 border-100" style="border-radius: 0px; width: 113%; resize: none;"></textarea>
+                    </div>
+                    <div class="col-3 col-sm-2 col-md-2 col-lg-2 col-xl-2 text-nowrap d-md-flex justify-content-md-end p-0">
+                        <button class="btn btn-dark h-100 w-auto" type="button" onclick="recuperarTexto()" style="border-radius: 10px;"><i class="fab fa-telegram-plane"></i></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function recuperarTexto() {
+            
+            // Obtener el elemento textarea por su ID
+            var textarea = document.getElementById('messageInput');
+            var chat = document.getElementById('chat');
+            var contenido = textarea.value;
+
+           // Crear un nuevo elemento <li> con la estructura que proporcionaste
+            var nuevoMensaje = document.createElement("li");
+            nuevoMensaje.className = "d-flex justify-content-end my-2";
+            nuevoMensaje.innerHTML = '<div class="card border border-muted" style="width: 65%;border-top-left-radius: 20px;border-top-right-radius: 0px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;background: rgba(52,58,64,0.05);">' +
+            '<div class="card-body text-center p-2">' +
+            '<p class="text-start card-text" style="font-size: 1rem;">' + contenido + '</p>' + '<h6 class="text-muted card-subtitle text-end" style="font-size: .75rem;">'+getDate()+'</h6></div></div>';
+
+            // Agregar el nuevo elemento a la lista
+            chat.appendChild(nuevoMensaje);
+            var textarea = document.getElementById('messageInput');
+            textarea.value = '';
+           
+            enviarMensaje(contenido)
+    }
+
+    
+
+    // Asignar la función al evento de clic del botón
+    
+
+            
+
+            
+        
+    </script>
+
+<script>
+
+
+
+var mensajeCargado = false; // Variable para rastrear si el mensaje ya se ha cargado
+
+function cargarMensajes() {
+    var mensaje_minera = localStorage.getItem('minera');
+
+    if (mensaje_minera && !mensajeCargado) {
+        var nuevoMensaje = document.createElement("li");
+        nuevoMensaje.className = " my-2";
+        nuevoMensaje.innerHTML = '<div class="card border border-muted" style="width: 65%;border-top-left-radius: 20px;border-top-right-radius: 0px;border-bottom-right-radius: 20px;border-bottom-left-radius: 20px;background: rgba(52,58,64,0.05);">' +
+            '<div class="card-body text-center p-2">' +
+            '<p class="text-start card-text" style="font-size: 1rem;">' + mensaje_minera + '</p>' + '<h6 class="text-muted card-subtitle text-end" style="font-size: .75rem;">' + getDate() + '</h6></div></div>';
+
+        // Agregar el nuevo elemento a la lista
+        chat.appendChild(nuevoMensaje);
+
+        mensajeCargado = true; // Marcar que el mensaje ha sido cargado
+
+        // Limpiar el mensaje almacenado en localStorage después de mostrarlo
+        localStorage.removeItem('minera');
+    } else if (!mensaje_minera) {
+        mensajeCargado = false; // Restablecer la variable si no hay mensaje en localStorage
+    }
+}
+
+// Llamar a la función cuando se envíe un nuevo mensaje
+function enviarMensaje(contenido) {
+    console.log("enviarMensaje")
+    
+
+   
+    localStorage.setItem('proveedor', contenido);
+    cargarMensajes();  // Llamar a la función para que agregue el nuevo mensaje al chat inmediatamente
+}
+
+// Ejecutar cargarMensajes al cargar la página
+cargarMensajes();
+
+// Ejecutar cargarMensajes cada segundo
+setInterval(cargarMensajes, 1000);
+
+
+       
+</script>
+
+   
+
+    
+</script>
+
+
+
+
+
+
+
+
+
+
+
+    
+    <script>
+        // Ejemplo de datos de chat (puedes reemplazar esto con datos reales de tu aplicación)
+        const chats = [
+            { id: 1, name: 'CMP', messages: [] },
+            { id: 2, name: 'LOS PELAMBRES', messages: [] },
+            { id: 3, name: 'TECK', messages: [] },
+            // ... Agrega más chats según sea necesario
+        ];
+    
+        // Función para cambiar el contenido del chat al hacer clic en un botón
+        function openChat(chatId) {
+            const selectedChat = chats.find(chat => chat.id === chatId);
+            const chatUserElement = document.getElementById('chat-user');
+            const chatContentElement = document.getElementById('chat-content');
+            const chatTitleElement = document.getElementById('chat-title');
+    
+            // Actualiza el título del chat con el nombre del usuario
+            chatUserElement.textContent = selectedChat.name;
+    
+            // Limpia el contenido del chat
+            chatContentElement.innerHTML = '';
+    
+            // Crea elementos para mostrar el historial de mensajes del chat
+            const chatHistory = document.createElement('ul');
+            chatHistory.classList.add('list-unstyled');
+    
+            selectedChat.messages.forEach(message => {
+                const listItem = document.createElement('li');
+                listItem.textContent = `${message.sender}: ${message.text}`;
+                chatHistory.appendChild(listItem);
+            });
+    
+            // Agrega el historial de mensajes al contenido del chat
+            chatContentElement.appendChild(chatHistory);
+    
+            // Muestra la interfaz del chat
+            chatTitleElement.style.display = 'flex';
+            chatContentElement.style.display = 'block';
+        }
+    
+        // Agrega eventos de clic a los botones de chat
+        document.addEventListener('DOMContentLoaded', () => {
+            const chatButtons = document.querySelectorAll('.chat-box li');
+    
+            chatButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const chatId = button.dataset.chatId;
+                    openChat(parseInt(chatId));
+                });
+            });
+        });
+    </script>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/chat/trato.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://kit.fontawesome.com/9b8a7e18a0.js"></script>
+</body>
+
+</html>
