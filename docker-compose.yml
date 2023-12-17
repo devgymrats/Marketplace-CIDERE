@@ -9,7 +9,7 @@ services:
       - "8080:80"
     volumes:
       # - ./nginx-conf:/etc/nginx/conf.d
-      - ./static/Assets/:/usr/share/nginx/html:ro
+      - ./static/:/usr/share/nginx/html:ro
   db:
     image: postgres:latest
     container_name: postgres
