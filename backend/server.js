@@ -81,7 +81,7 @@ app.get('/noticias',(req,res) =>{
       // Los resultados de la consulta están en la propiedad 'rows'
       const noticias = result.rows;
       
-      console.log('Consulta de noticias exitosa en PostgreSQL');
+      console.log(getDate()+' Consulta de noticias exitosa en PostgreSQL');
       res.status(200).json({ noticias: noticias });
     }
    });
@@ -114,11 +114,19 @@ app.post('/noticia', async(req,res) =>{
   try {
   
     const result = await pool.query(
-      'INSERT INTO noticias(titulo, noticia, fecha, imagen) VALUES ($1,$2,$3,$4)',
+      'INSERT INTO noticias(titulo, noticia, fecha, imagen) VALUES ($1,$2,$3,$4) RETURNING id',
       [titulo, noticia, fecha, imagen]
     );
 
-    res.status(201).json({mensaje: "Noticia insertada correctamente"});
+    const noticiaId = result.rows[0].id;
+ 
+     res.status(201).json({
+       success: true,
+       message: 'Noticia insertada correctamente',
+       noticiaId: noticiaId, 
+     });
+
+
 
   } catch (error) {
     console.error('Error en la inserccion de noticia a la base de datos:', error);
@@ -139,12 +147,37 @@ app.put('/noticia/:id', async(req,res) =>{
     const result = await pool.query("UPDATE noticias SET titulo = $1, noticia =$2 WHERE id = $3",[titulo, noticia,idNoticia]);
     res.status(200).json({ message: 'Noticia actualizada correctamente.'});
 
+
+    
+
   } catch (error) {
     console.error('La pregunta no se puede editar o no existe', error);
     res.status(500).json({ error: 'La pregunta no se puede editar o no existe' });
   }
  
 });
+
+app.delete('/noticia/:id', async(req,res)=>{
+
+
+  const idNoticia= req.params.id;
+ 
+  try {
+    const result = await pool.query('DELETE FROM noticias WHERE id = $1', [idNoticia]);
+    
+
+    if (res) {
+      res.status(201).json({ mensaje: 'Noticia borrada' });
+      console.log(getDate(),"Noticia eliminada")
+    } else {
+      res.status(404).json({ error: 'Noticia no encontrada' });
+    }
+  } catch (error) {
+    console.error('Error en la consulta de noticia a la base de datos:', error);
+    res.status(500).json({ error: 'Error en el servidor' });
+  }
+});
+
 
 //Lista de mineras
 app.get('/usuarios/mineras', async(req,res) =>{
@@ -232,9 +265,6 @@ app.get('/preguntas', async(req,res) =>{
     res.status(500).json({ error: 'Error en el servidor' });
   }
 });
-
-
-
 
 
 app.post('/chat/sendmessage', async(req,res) =>{
@@ -343,14 +373,18 @@ app.post('/FAQ', async(req,res) =>{
   const {pregunta,respuesta} = req.body;
 
    // Query de inserción
-   const query = 'INSERT INTO preguntas_respuestas(pregunta,respuesta) VALUES ($1, $2) RETURNING *';
+   const query = 'INSERT INTO preguntas_respuestas(pregunta,respuesta) VALUES ($1, $2) RETURNING id';
 
    try {
      const result = await pool.query(query, [pregunta,respuesta]);
  
+      // Accede al ID de la pregunta recién insertada
+     const preguntaId = result.rows[0].id;
+ 
      res.json({
        success: true,
-       message: 'Inserción de la pregunta exitosa',// Devuelve la fila insertada
+       message: 'Inserción de la pregunta exitosa',
+       preguntaId: preguntaId, // o simplemente preguntaId si estás utilizando ECMAScript 6
      });
 
    } catch (error) {
@@ -384,6 +418,23 @@ app.delete('/FAQ/:id', async(req,res)=>{
     }
   });
  
+
+  function getDate(){
+    const fecha = new Date();
+    
+    
+    
+   
+    var segundos = fecha.getSeconds();
+    var minutos = fecha.getMinutes();
+    var horas = fecha.getHours();
+  
+
+    var hora = +horas+':'+minutos+':'+segundos;
+
+    return hora;
+  }
+  
 
 
 const port = process.env.PORT || 5000;
